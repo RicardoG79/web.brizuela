@@ -1,0 +1,48 @@
+footer {
+    background: radial-gradient(circle, rgb(6, 48, 112, 1) 10%, rgba(6, 55, 117, 0.9) 40%, rgba(6, 65, 117, 0.8) 90%, rgba(6, 85, 125, 0.6) 100%);
+    color: white;
+    padding: 10px;
+    margin-bottom: 0;
+    border-top: #07c59f 4px solid;}
+footer p{
+    display: inline-block;
+   vertical-align: middle;
+   text-align: right;
+   width: 90%;
+}
+.icons {
+    bottom: 8px;
+    display: inline-block;
+    flex-direction: row;
+    vertical-align: middle;
+}
+.icons .floating-icon{
+gap: 25px;
+}
+
+.floating-icon img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+transition: transform 0.3s;
+}
+
+.floating-icon img:hover {
+transform: scale(1.1);
+}
+@media screen and (max-width: 768px){
+
+
+.icons {
+    bottom: 8px;
+    display: inline-block;
+    flex-direction: row;
+    vertical-align: middle;
+}
+.floating-icon img {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+transition: transform 0.3s;
+}
+}

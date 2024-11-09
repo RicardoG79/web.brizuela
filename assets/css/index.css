@@ -1,0 +1,132 @@
+@import url("header.css");
+@import url("footer.css");
+/*Se aplica lo siguiente siempre para que quede en cero.*/
+* {
+	margin:0;
+	padding:0;
+}
+
+html, body {
+	background:#ffffff;
+	height: 100%;
+	margin: 0;
+	}
+main{
+    background: radial-gradient(circle, rgb(20, 77, 177) 10%, rgba(20, 55, 117, 0.9) 40%, rgba(20, 65, 117, 0.8) 90%, rgba(20, 85, 125, 0.6) 100%);
+}
+.content {
+    padding: 10px;
+}
+.carousel-container {
+    width: 400px; /* Ancho fijo del contenedor */
+    height: 200px; /* Alto fijo del contenedor */
+    max-width: 100%; /* Responsivo */
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.carousel-slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    border-radius: 10px;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+
+
+/* Paginación del carrusel */
+.carousel-dots {
+    display: flex;
+    justify-content: center; /* Asegura que los puntos estén centrados */
+    position: absolute;
+    bottom: 10px;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+	
+    left: 0;
+    z-index: 1;
+}
+
+.carousel-dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #96b6f7;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dots .active {
+    background-color: #717171;
+}
+
+/* Contenedor del botón */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Código para los botones */
+.functions {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.function-card {
+    background: linear-gradient(45deg, #7fffdf, #07c59f); /* Degradado de verde claro a verde oscuro */;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 55px;
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 225px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.function-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #07c59f, #7fffdf); /* Intercambio del degradado al hacer hover */
+}
+.des{
+    color: #ffffff;
+    margin: 10px 25px 10px 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+	html, body {
+		background:#FFFFFA;
+		height: 100%;
+		margin: 0;
+		
+	}
+	/* .content {
+		min-height: calc(70vh - 100px);  Ajusta 100px al tamaño de tu footer 
+	} */
+
+    .function-card{
+        max-width: 250px;
+        text-align: center;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+        align-items: center;
+    }
+}
+
