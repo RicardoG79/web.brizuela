@@ -15,17 +15,17 @@ header {
     background: radial-gradient(circle, rgb(6, 48, 112, 1) 10%, rgba(6, 55, 117, 0.9) 40%, rgba(6, 65, 117, 0.8) 90%, rgba(6, 85, 125, 0.6) 100%);
     padding: 20px;
     text-align: center;
-    border-bottom: #07c59f 4px solid;
+    border-bottom: #ef8c30 4px solid;
     
   }
 .lema{
   font-family: "Caveat", cursive;
   display: block;
   width: 100%;
-  margin: 6px; /* Ajusta el espacio superior respecto a los enlaces */
+  margin: 3px; /* Ajusta el espacio superior respecto a los enlaces */
   font-size: 20px; /* Tamaño del texto */
-  color: white; /* Ajusta el color según tu diseño */
-  font-weight: bold; /* Añade un estilo en negrita al texto */
+  color: white; 
+  font-weight: bold; /* negrita */
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra negra */
 
@@ -44,9 +44,9 @@ header {
 }
 
 .logo img {
-    width: 85px; /* Ajusta según el tamaño que prefieras */
+    width: 85px; /* Ajusta según el tamaño del logo */
     cursor: none;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-left: 15px;
 }
 
@@ -60,7 +60,7 @@ header {
 }
 
 .nav-links li {
-    margin-left: 25px; /* Espacio entre los elementos */
+    margin-left: 20px; /* Espacio entre los elementos */
 
 }
 .nav-links a i {
@@ -113,9 +113,10 @@ header {
 
     .nav-links li {
       margin: 15px; /* Espacio entre los elementos en la vista móvil */
-    }
+    
 
     .burger {
 display: block;
     }
+}
 }

@@ -7,3 +7,12 @@ burger.addEventListener('click', () => {
 });
 
 
+document.getElementById('icono').onclick = function() {
+  document.getElementById('popup').style.display = 'block';
+};
+
+document.getElementById('cerrar').onclick = function() {
+  document.getElementById('popup').style.display = 'none';
+};
+
+

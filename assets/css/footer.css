@@ -3,12 +3,12 @@ footer {
     color: white;
     padding: 10px;
     margin-bottom: 0;
-    border-top: #07c59f 4px solid;}
+    border-top: #ef8c30 4px solid;}
 footer p{
     display: inline-block;
-   vertical-align: middle;
-   text-align: right;
-   width: 90%;
+    vertical-align: middle;
+    text-align: right;
+    width: 90%;
 }
 .icons {
     bottom: 8px;
@@ -30,6 +30,41 @@ transition: transform 0.3s;
 .floating-icon img:hover {
 transform: scale(1.1);
 }
+
+/* Código para el texto emergente de contacto*/
+.footer{
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    margin: 12px;
+    padding: 0;
+}
+.icono {
+    font-size: 24px;
+    cursor: pointer;
+ 
+    
+    }
+.cerrar {
+    color: #ff0000;
+    cursor: pointer;
+    font-weight: bold;
+}
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    right: 50px;
+    background: radial-gradient(circle, rgb(6, 48, 112, 1) 10%, rgba(6, 55, 117, 0.9) 40%, rgba(6, 65, 117, 0.8) 90%, rgba(6, 85, 125, 0.6) 100%);
+    background-color: #415075;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+
 @media screen and (max-width: 768px){
 
 

@@ -12,7 +12,25 @@ html, body {
 	margin: 0;
 	}
 main{
-    background: radial-gradient(circle, rgb(20, 77, 177) 10%, rgba(20, 55, 117, 0.9) 40%, rgba(20, 65, 117, 0.8) 90%, rgba(20, 85, 125, 0.6) 100%);
+    background-image: url('/assets/img/FondoD.png'); /* Ruta relativa a la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* Texto en blanco para que se lea mejor sobre el fondo */
+    background-size: cover; /* Escala la imagen para que cubra todo el contenedor */
+    
+}
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Color semitransparente negro */
+    z-index: 1; /* Coloca la superposición detrás del contenido */
+}
+.main > * {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté encima de la superposición */
 }
 .content {
     padding: 10px;
@@ -85,7 +103,7 @@ main{
 }
 
 .function-card {
-    background: linear-gradient(45deg, #7fffdf, #07c59f); /* Degradado de verde claro a verde oscuro */;
+    background: linear-gradient(45deg, #2196F3, #90CAF9); /* Degradado */;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 55px;
@@ -94,18 +112,19 @@ main{
     flex: 1;
     max-width: 225px;
     text-decoration: none;
-    color: inherit;
+    color: rgb(250, 228, 129);
 }
 
 .function-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(45deg, #07c59f, #7fffdf); /* Intercambio del degradado al hacer hover */
+    background: linear-gradient(45deg, #90CAF9, #2196F3); /* Intercambio del degradado al hacer hover */
 }
 .des{
-    color: #ffffff;
+    color: #030303;
     margin: 10px 25px 10px 25px;
     padding: 20px;
     text-align: center;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 768px){
