@@ -2,13 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Breve descripción de tu página">
     <meta name="keywords" content="Palabras clave, SEO">
     <meta name="author" content="Tu nombre o compañía">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
+    <meta name="viewport" content="width=device-width">
     <!-- Título de la página -->
     <title>Instituto Brizuela</title>
 
@@ -17,10 +15,11 @@
     
 
     <!-- Enlace a fuentes externas (Google Fonts) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/84a6577e66.js" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:wght@100..400&display=swap" rel="stylesheet">
+<!-- Enlace a iconos de font -->
+
+
     <!-- Favicon (icono del sitio) -->
     <link rel="icon" href="assets/img/logo1.ico" type="image/x-icon">
 </head>
@@ -30,7 +29,7 @@
     <header>    
 		<nav class="navbar">
             <div class="logo">
-                <a href="#"><img src="./assets/img/logo1.ico" alt="Logo del Curso"></a>
+                <a href="#"><img src="./assets/img/logo1.ico" alt="Logo del Insituto"></a>
             </div>
             
         <ul class="nav-links">
@@ -40,7 +39,7 @@
 				<li><a href="#"><i class="fa-solid fa-handshake"></i>Administración</a></li>
 				
 			</ul>
-            <div class="burger">
+           <div class="burger" onclick="toggleMenu()">  <!-- validación para menu hamburguesa -->
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -121,7 +120,11 @@
     </footer>
 
     <!-- Archivos JavaScript -->
+    <script src="https://kit.fontawesome.com/84a6577e66.js" crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/img.js"></script>
+    <!-- <script>
+        
+    </script> -->
 </body>
 </html>

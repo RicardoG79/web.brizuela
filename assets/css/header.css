@@ -101,6 +101,7 @@ header {
     position: absolute;
     top: 250px; /* Ajusta la posición del menú desplegable */
     left: -100%;
+    padding-top: 20px;
     background:  radial-gradient(circle, rgb(7, 48, 112, 1) 10%, rgba(7, 55, 117, 0.95) 40%, rgba(7, 65, 117, 0.85) 90%, rgba(7, 85, 125, 0.7) 100%);;
     text-align: center;
     transition: all 0.5s ease;
