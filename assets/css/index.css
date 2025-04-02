@@ -143,7 +143,7 @@ main{
 @media screen and (max-width: 768px){
 	html, body {
 		background:#FFFFFA;
-		height: 70%;
+		height: 50%;
 		margin: 0;
 		
 	}
@@ -152,13 +152,14 @@ main{
 	} */
 
     .function-card{
-        max-width: 250px;
+        max-width: 50px;
         text-align: center;
         align-items: center;
     }
     h2{
         text-align: center;
         align-items: center;
+        
     }
 
     .nav-links {
@@ -166,7 +167,7 @@ main{
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 120px;
+        top: 250px;
         left: 0;
         background-color: #333;
     }
@@ -179,6 +180,7 @@ main{
         text-align: center;
         padding: 5px;
         width: 100%;
+        margin-top: 5px;
     }
 
     .burger {
