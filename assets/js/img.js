@@ -18,7 +18,7 @@ let currentSlide = 0;
             showSlide(currentSlide);
         }
 
-        // Cambiar la imagen cada 1 segundo
+        // Cambiar la imagen cada 4 segundo
         setInterval(nextSlide, 4000);
 
         // Permitir clic en puntos para cambiar la imagen
