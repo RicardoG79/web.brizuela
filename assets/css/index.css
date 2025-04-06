@@ -147,12 +147,12 @@ main{
 		margin: 0;
 		
 	}
-	/* .content {
-		min-height: calc(70vh - 100px);  Ajusta 100px al tamaño de tu footer 
-	} */
+	.content {
+		min-height: calc(70vh - 100px);  /* Ajusta 100 px al tamaño de tu footer  */
+	}
 
     .function-card{
-        max-width: 50px;
+        /* max-width: 90px; */
         text-align: center;
         align-items: center;
     }
@@ -165,7 +165,7 @@ main{
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 110%;
         position: absolute;
         top: 250px;
         left: 0;
