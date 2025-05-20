@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between; /* separa horizontalmente */
+    align-items: center; /* alinea verticalmente al centro */
+  }
+  
+  .seccion1, .seccion2 {
+    width: 25%; /* o el ancho que necesites */
+  }
+  

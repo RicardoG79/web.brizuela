@@ -11,8 +11,10 @@
     <title>Instituto Brizuela</title>
 
     <!-- Enlace a las hojas de estilo (CSS) -->
-    <link rel="stylesheet" href="assets/css/index.css">
-    
+     
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="preload" href="/templates/nivel_inicial.css" as="style">
+    <link rel="stylesheet" href="/templates/nivel_inicial.css">
 
     <!-- Enlace a fuentes externas (Google Fonts) -->
 
@@ -21,7 +23,7 @@
 
 
     <!-- Favicon (icono del sitio) -->
-    <link rel="icon" href="assets/img/logo1.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/img/logo1.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -51,12 +53,64 @@
             </div>
 		</nav>
 	</header>
+    <section>
+        <h1>NIVEL INICIAL</h1>
+    </section>
+    
 
     <!-- Sección principal -->
-    <main>
-   
+    <main class="contenido-principal">
 
+        <div class="container">
+            <section class="texto-contenido">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac fringilla enim, quis aliquet ligula. Proin fermentum quam vitae nibh viverra volutpat. Sed vestibulum placerat blandit. Nunc pretium urna id metus commodo, non venenatis velit elementum. Aliquam maximus, justo id pharetra euismod, neque est hendrerit nulla, sollicitudin faucibus sapien velit at massa. Morbi id libero vitae lacus tristique consectetur eget id ligula. Fusce a elementum enim.
+            
+                    Donec eget diam hendrerit odio maximus convallis at ut augue. Ut semper vestibulum elit quis bibendum. Etiam vitae dignissim nisi, id congue libero. Aliquam pellentesque tortor purus, nec maximus est egestas sit amet. Nam ultrices pharetra libero a bibendum. Integer mi mauris, sagittis nec neque nec, egestas laoreet dolor. Pellentesque ac consectetur est. Ut nec congue purus, eu laoreet tellus. Suspendisse vitae erat erat.
+                    
+                    Maecenas quis neque laoreet, tempor eros at, porttitor ex. Nunc ullamcorper suscipit nibh. Cras blandit dictum ipsum in viverra. Suspendisse eros mi, vestibulum ut pretium ut, tristique ac purus. Pellentesque vitae feugiat eros, nec pellentesque dui. Nulla placerat ante et tristique ultrices. Morbi commodo ultricies diam. Curabitur nec feugiat risus. Duis sed massa sed magna rhoncus pharetra sed quis ante. Morbi a odio id elit molestie suscipit. Nullam quam ante, blandit eu libero non, euismod mollis lacus. In hac habitasse platea dictumst. Aenean ac ultrices nunc, vel sollicitudin eros. Quisque molestie, nisi non sagittis semper, dui sem eleifend arcu, vel ornare libero arcu at velit. Vivamus accumsan sapien efficitur arcu tempor, et euismod leo efficitur. </p>   
+            </section>
+            
+               <section class="imagen-contenido">
+                <img src="/assets/img/InicialJardin.jpg" alt="JardinDeInfantes">
+               </section>
+
+        </div>
+  
     </main>
+
+    <section>
+        <h2>CONTACTO</h2>
+        <form>
+            <fieldset>
+                <legend>Contactanos</legend>
+                <div>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" placeholder="Nombre">
+                </div>
+                
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="email" placeholder="Email">
+                </div>
+                
+                <div>
+                    <label for="Telefono">Teléfono</label>
+                    <input type="tel" placeholder="Teléfono">
+                </div>
+                
+                <div>
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="Mensaje"></textarea>
+                </div>
+                
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+                
+
+            </fieldset>
+        </form>
+    </section>
 
     <!-- Estructura del footer -->
     <footer>
