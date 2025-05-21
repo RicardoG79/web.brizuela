@@ -12,9 +12,9 @@ html, body {
 	margin: 0;
 	}
 main{
-    background-image: url('/assets/img/FondoD.png'); /* Ruta relativa a la imagen */
+    /*background-image: url('/assets/img/FondoD.png');  Ruta relativa a la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: white; /* Texto en blanco para que se lea mejor sobre el fondo */
+    color: rgb(0, 0, 0); /* Texto en blanco para que se lea mejor sobre el fondo */
     background-size: cover; /* Escala la imagen para que cubra todo el contenedor */
     
 }
