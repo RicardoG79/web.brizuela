@@ -96,12 +96,13 @@ main{
 
 
 .des{
-    color: #030303;
+    color: #333;
     margin: 10px 25px 10px 25px;
     padding: 20px;
     text-align: center;
     font-size: 18px;
 }
+
 
 .nav-links {
     display: flex;
