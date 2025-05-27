@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Breve descripción de tu página">
+    <meta name="keywords" content="Palabras clave, SEO">
+    <meta name="author" content="Tu nombre o compañía">
+    <meta name="viewport" content="width=device-width">
+    <!-- Título de la página -->
+    <title>Instituto Brizuela</title>
+
+    <!-- Enlace a las hojas de estilo (CSS) -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/propuesta.css">
+
+    
+
+    <!-- Enlace a fuentes externas (Google Fonts) -->
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:wght@100..400&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+<!-- Enlace a iconos de font -->
+
+
+    <!-- Favicon (icono del sitio) -->
+    <link rel="icon" href="assets/img/logo1.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Código de header -->
+    <header>    
+		<nav class="navbar bg-primary" data-bs-theme="dark">
+            <div class="logo">
+                <a href="#"><img src="./assets/img/logo1.ico" alt="Logo del Insituto"></a>
+            </div>
+            
+        <ul class="nav-links">
+				<li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li><a href="#"><i class="fa-solid fa-street-view"></i>Nuestro Colegio</a></li>
+				<li><a href="#"><i class="fa-solid fa-hand-holding-heart"></i>Propuesta Educativa</a></li>
+				<li><a href="#"><i class="fa-solid fa-handshake"></i>Actividad Pastoral</a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake"></i>Administración</a></li>
+				
+			</ul>
+        <div class="burger" onclick="toggleMenu()">  <!-- validación para menu hamburguesa -->
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="lema">
+                <h2>"A la luz del Evangelio, transformando la cultura <h2>
+                   
+                    
+            </div>
+		</nav>
+	</header>
+
+    <!-- Sección principal -->
+    <main>   
+        <section class="py-5" style="background-color: #eaf4ff;">
+            <div class="container">
+                <div class="des">
+                    <h4>"En nuestros cuatros niveles, acompañamos a toda la comunidad en 
+                        sus distintas necesidades educativas."
+                    </h4>
+                    <p>Ingresá a los enlaces para conocer actividades y propuestas.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+
+                    <!-- CARD 1 -->
+                    <div class="col-lg-10">
+                        <div class="card flex-md-row align-items-center shadow-sm overflow-hidden">
+                            <div class="col-md-4">
+                                <img src="./assets/img/InicialJardin.jpg" class="img-fluid h-100 w-100 object-fit-cover" style="max-height: 200px;" alt="Nivel Inicial">
+                            </div>
+                            <div class="col-md-8 p-3">
+                                <h5 class="card-title">NIVEL INICIAL</h5>
+                                <p class="card-text">Texto de la tarjeta para el nivel inicial. Podés agregar algo más extenso acá si querés.</p>
+                                <a href="./nivel_inicial.html" class="btn btn-primary" target="_blank">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="col-lg-10">
+                        <div class="card flex-md-row align-items-center shadow-sm overflow-hidden">
+                            <div class="col-md-4">
+                                <img src="./assets/img/Primario.jpg" class="img-fluid h-100 w-100 object-fit-cover" style="max-height: 200px;" alt="Nivel Primario">
+                            </div>
+                            <div class="col-md-8 p-3">
+                                <h5 class="card-title">NIVEL PRIMARIO</h5>
+                                <p class="card-text">Texto de la tarjeta para el nivel primario.</p>
+                                <a href="./nivel_primario.html" class="btn btn-primary" target="_blank">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="col-lg-10">
+                        <div class="card flex-md-row align-items-center shadow-sm overflow-hidden">
+                            <div class="col-md-4">
+                                <img src="./assets/img/Estudiantes1.jpg" class="img-fluid h-100 w-100 object-fit-cover" style="max-height: 200px;" alt="Nivel Secundario">
+                            </div>
+                            <div class="col-md-8 p-3">
+                                <h5 class="card-title">NIVEL SECUNDARIO</h5>
+                                <p class="card-text">Texto de la tarjeta para el nivel secundario.</p>
+                                <a href="./nivel_secundario.html" class="btn btn-primary" target="_blank">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="col-lg-10">
+                        <div class="card flex-md-row align-items-center shadow-sm overflow-hidden">
+                            <div class="col-md-4">
+                                <img src="./assets/img/Secundario.jpg" class="img-fluid h-100 w-100 object-fit-cover" style="max-height: 200px;" alt="Nivel Superior">
+                            </div>
+                            <div class="col-md-8 p-3">
+                                <h5 class="card-title">NIVEL SUPERIOR</h5>
+                                <p class="card-text">Texto de la tarjeta para el nivel superior.</p>
+                                <a href="./nivel_superior.html" class="btn btn-primary" target="_blank">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección para |novedades | archivos importantes, matriculación, mesas de exámenes|-->
+        <section class="py-5 text-white" style="background-color: #002b5c;">
+        <div class="container">
+            <h2 class="text-center mb-4">TODO PARA MATRICULACIÓN</h2>
+            <div class="accordion" id="matriculaAccordion">
+
+            <!-- Ítem 1: Matriculación -->
+            <div class="accordion-item bg-transparent border-bottom border-white">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    Documentación para Matriculación
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#matriculaAccordion">
+                <div class="accordion-body text-white">
+                    Podés descargar CUS - ISA - PDF para matriculación.  
+                    <br>
+                    <a href="/archivos_descargables.html#matriculacion" class="btn btn-light mt-2" target="_blank" >Ir a sección</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Ítem 2: Calendario -->
+            <div class="accordion-item bg-transparent border-bottom border-white">
+                <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                    Calendario
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#matriculaAccordion">
+                <div class="accordion-body text-white">
+                    Accedé al calendario académico y fechas importantes.  
+                    <br>
+                    <a href="/archivos_descargables.html#calendario" class="btn btn-light mt-2" target="_blank">Ir a sección</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Ítem 3: Mesas de Exámenes -->
+            <div class="accordion-item bg-transparent border-bottom border-white">
+                <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                    Mesa de Exámenes
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#matriculaAccordion">
+                <div class="accordion-body text-white">
+                    Consultá fechas de mesas de exámenes y requisitos.  
+                    <br>
+                    <a href="/archivos_descargables.html#mesas" class="btn btn-light mt-2" target="_blank">Ir a sección</a>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+<!--
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Novedades</h2>
+            <div class="d-flex justify-content-center">
+                <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/DI4go4op6io/"
+                data-instgrm-version="14"
+                style="width: 100%; max-width: 400px; margin: auto;">
+                </blockquote>
+            </div>
+        </div>
+ -->
+        <!-- Sección para |Contacto de todos los niveles: teléfono, email, redes sociales| direccion con mapa|-->
+        <section class="contacto py-5 bg-light">
+            <div class="container">
+                <h2 class="text-secondary fw-bold mb-4">Contacto</h2>
+                <div class="row align-items-start">
+
+                    <!-- Columna izquierda: Datos de contacto -->
+                    <div class="col-md-6 mb-4">
+                        <h4 class="text-primary">Nivel Inicial</h4>
+                        <p class="mb-2">Teléfono: <span class="text-dark">+54 3544 xxx xxx</span></p>
+                        <p class="mb-2">Email: <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a></p>
+                        <h4 class="text-primary">Nivel Primario</h4>
+                        <p class="mb-2">Teléfono: <span class="text-dark">+54 3544 xxx xxx</span></p>
+                        <p class="mb-2">Email: <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a></p>
+                        <h4 class="text-primary">Nivel Secundario</h4>
+                        <p class="mb-2">Teléfono: <span class="text-dark">+54 3544 xxx xxx</span></p>
+                        <p class="mb-2">Email: <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a></p>
+                        <h4 class="text-primary">Nivel Superior</h4>
+                        <p class="mb-2">Teléfono: <span class="text-dark">+54 3544 xxx xxx</span></p>
+                        <p class="mb-2">Email: <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a></p>
+                    </div>
+
+                    <!-- Columna derecha: Mapa -->
+                    <div class="col-md-6 bg-primary p-1">
+                        <div class="ratio ratio-4x3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.484258403222!2d-65.19087472529915!3d-31.947756822138313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942cd4a0ee28ffdb%3A0x8bd9c0749c304dec!2sItalia%20221%2C%20Villa%20Dolores%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1747949913288!5m2!1ses-419!2sar" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Estructura del footer -->
+    <footer>
+                
+        <div class="icons">
+            <div class="floating-icon">
+                <img src="assets/img/logo diócesis.jpg" alt="Diócesis">
+            </div>
+        </div>
+    </div>
+    
+    <p>Ciclo lectivo 2025 || © Instituto Brizuela </p>
+
+    </footer>
+
+    <!-- Archivos JavaScript -->
+    <script src="https://kit.fontawesome.com/84a6577e66.js" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/img.js"></script>
+
+    <!-- Script de Instagram (necesario para que funcione el embed) -->
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-qB9hXScN+ZBz9XbW9GHMHL2c5Zlq0EfjWk7Vm7K46D3xY7aSGV3wA92m7YY04h8g" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
