@@ -18,6 +18,13 @@ main{
     background-size: cover; /* Escala la imagen para que cubra todo el contenedor */
     
 }
+.des{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #02062a;
+    margin: 20px 0;
+    font-style: italic;    
+}
 .main::before {
     content: "";
     position: absolute;
