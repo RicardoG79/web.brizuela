@@ -55,32 +55,38 @@
 
     <!-- Sección principal -->
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide">
+       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/assets/img/Estudiantes1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/Estudiantes2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/Estudiantes3.jpg" class="d-block w-100" alt="...">
-              </div>
+
+            <!-- Imágenes -->
+            <div class="carousel-inner carousel-fixed-height">
+                <div class="carousel-item active">
+                <img src="/assets/img/Estudiantes1.jpg" class="d-block w-100 object-fit-cover" alt="Estudiantes 1">
+                </div>
+                <div class="carousel-item">
+                <img src="/assets/img/Estudiantes2.jpg" class="d-block w-100 object-fit-cover" alt="Estudiantes 2">
+                </div>
+                <div class="carousel-item">
+                <img src="/assets/img/Estudiantes3.jpg" class="d-block w-100 object-fit-cover" alt="Estudiantes 3">
+                </div>
             </div>
+
+            <!-- Botones de navegación -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
-          </div>
+        </div>
+
 
           <!-- Pre contenido principal -->
         <div class="des">
@@ -210,7 +216,7 @@
         </div>
         </section>
 
-
+<!--
         <div class="container my-5">
             <h2 class="text-center mb-4">Novedades</h2>
             <div class="d-flex justify-content-center">
@@ -218,74 +224,131 @@
                     Visita nuestras redes sociales y canales de comunicación
                 </a>
             </div>
-        </div>
+        </div>        
+-->
 
+
+        <!-- Sección Novedades con tarjetas -->
+        <section class="text-center py-5 bg-light">
+            <h2 class="mb-4 text-secondary fw-bold">Novedades</h2>
+            <p class="mb-5">Seguinos en Instagram según tu nivel educativo:</p>
+
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+
+                <!-- Tarjeta: Nivel Inicial -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card insta-card p-3">
+                    <h5 class="mb-3">Nivel Inicial</h5>
+                    <img src="URL_IMAGEN_INICIAL" alt="Perfil Inicial" class="insta-img mx-auto">
+                    <a href="https://www.instagram.com/brizuela_inicial/" target="_blank" class="btn insta-btn w-100">
+                        <i class="bi bi-instagram me-1"></i> Ver Instagram
+                    </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Nivel Primario -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card insta-card p-3">
+                    <h5 class="mb-3">Nivel Primario</h5>
+                    <img src="URL_IMAGEN_PRIMARIO" alt="Perfil Primario" class="insta-img mx-auto">
+                    <a href="https://www.instagram.com/institutobrizuela_primario/" target="_blank" class="btn insta-btn w-100">
+                        <i class="bi bi-instagram me-1"></i> Ver Instagram
+                    </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Nivel Secundario -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card insta-card p-3">
+                    <h5 class="mb-3">Nivel Secundario</h5>
+                    <img src="URL_IMAGEN_SECUNDARIO" alt="Perfil Secundario" class="insta-img mx-auto">
+                    <a href="https://www.instagram.com/institutobrizuela/" target="_blank" class="btn insta-btn w-100">
+                        <i class="bi bi-instagram me-1"></i> Ver Instagram
+                    </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Nivel Superior -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card insta-card p-3">
+                    <h5 class="mb-3">Nivel Superior</h5>
+                    <img src="URL_IMAGEN_SUPERIOR" alt="Perfil Superior" class="insta-img mx-auto">
+                    <a href="https://www.instagram.com/brizuela_superior/" target="_blank" class="btn insta-btn w-100">
+                        <i class="bi bi-instagram me-1"></i> Ver Instagram
+                    </a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
         <!-- Sección CONTACTO -->
 
         <section class="contacto py-5 bg-light">
         <div class="container">
             <h2 class="text-secondary fw-bold mb-4">Contacto</h2>
-            <div class="row align-items-stretch g-4">
-            <!-- Columna 1: Inicial + Primario -->
-            <div class="col-md-3">
-                <div>
-                <h4 class="text-primary">Nivel Inicial</h4>
-                <p class="mb-2">
-                    <i class="bi bi-telephone-fill text-primary me-2"></i>
-                    <span class="text-dark">+54 3544 xxx xxx</span>
-                </p>
-                <p class="mb-4">
-                    <i class="bi bi-envelope-fill text-primary me-2"></i>
-                    <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
-                </p>
+            <div class="row align-items-stretch g-4 justify-content-center text-center text-md-start">
+                <!-- Columna 1: Inicial + Primario -->
+                <div class="col-md-3">
+                    <div>
+                    <h4 class="text-primary">Nivel Inicial</h4>
+                    <p class="mb-2">
+                        <i class="bi bi-telephone-fill text-primary me-2"></i>
+                        <span class="text-dark">+54 3544 xxx xxx</span>
+                    </p>
+                    <p class="mb-4">
+                        <i class="bi bi-envelope-fill text-primary me-2"></i>
+                        <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
+                    </p>
 
-                <h4 class="text-primary">Nivel Primario</h4>
-                <p class="mb-2">
-                    <i class="bi bi-telephone-fill text-primary me-2"></i>
-                    <span class="text-dark">+54 3544 xxx xxx</span>
-                </p>
-                <p>
-                    <i class="bi bi-envelope-fill text-primary me-2"></i>
-                    <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
-                </p>
+                    <h4 class="text-primary">Nivel Primario</h4>
+                    <p class="mb-2">
+                        <i class="bi bi-telephone-fill text-primary me-2"></i>
+                        <span class="text-dark">+54 3544 xxx xxx</span>
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-fill text-primary me-2"></i>
+                        <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
+                    </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Columna 2: Secundario + Superior -->
-            <div class="col-md-3">
-                <div>
-                <h4 class="text-primary">Nivel Secundario</h4>
-                <p class="mb-2">
-                    <i class="bi bi-telephone-fill text-primary me-2"></i>
-                    <span class="text-dark">+54 3544 xxx xxx</span>
-                </p>
-                <p class="mb-4">
-                    <i class="bi bi-envelope-fill text-primary me-2"></i>
-                    <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
-                </p>
+                <!-- Columna 2: Secundario + Superior -->
+                <div class="col-md-3">
+                    <div>
+                    <h4 class="text-primary">Nivel Secundario</h4>
+                    <p class="mb-2">
+                        <i class="bi bi-telephone-fill text-primary me-2"></i>
+                        <span class="text-dark">+54 3544 xxx xxx</span>
+                    </p>
+                    <p class="mb-4">
+                        <i class="bi bi-envelope-fill text-primary me-2"></i>
+                        <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
+                    </p>
 
-                <h4 class="text-primary">Nivel Superior</h4>
-                <p class="mb-2">
-                    <i class="bi bi-telephone-fill text-primary me-2"></i>
-                    <span class="text-dark">+54 3544 xxx xxx</span>
-                </p>
-                <p>
-                    <i class="bi bi-envelope-fill text-primary me-2"></i>
-                    <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
-                </p>
+                    <h4 class="text-primary">Nivel Superior</h4>
+                    <p class="mb-2">
+                        <i class="bi bi-telephone-fill text-primary me-2"></i>
+                        <span class="text-dark">+54 3544 xxx xxx</span>
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-fill text-primary me-2"></i>
+                        <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
+                    </p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Columna 3: Mapa -->
-            <div class="col-md-6 d-flex">
-                <div class="ratio_personal w-100">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.484258403222!2d-65.19087472529915!3d-31.947756822138313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942cd4a0ee28ffdb%3A0x8bd9c0749c304dec!2sItalia%20221%2C%20Villa%20Dolores%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1747949913288!5m2!1ses-419!2sar"
-                    allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <!-- Columna 3: Mapa -->
+                <div class="col-md-6 d-flex">
+                    <div class="ratio_personal w-100">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.484258403222!2d-65.19087472529915!3d-31.947756822138313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942cd4a0ee28ffdb%3A0x8bd9c0749c304dec!2sItalia%20221%2C%20Villa%20Dolores%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1747949913288!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
         </section>
