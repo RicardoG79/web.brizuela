@@ -91,6 +91,34 @@ main{
   z-index: 2;
 }
 
+/* Estilo para la seccion novedades: */
+  .insta-card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+  }
+  .insta-card:hover {
+    transform: translateY(-5px);
+  }
+  .insta-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 3px #e1306c;
+  }
+  .insta-btn {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border: none;
+    color: #fff;
+  }
+  .insta-btn:hover {
+    opacity: 0.9;
+  }
+
+  /* Stilo para contacto*/
 .ratio_personal {
   width: 100%;
   height: 100%; /* Que ocupe toda la altura disponible */
