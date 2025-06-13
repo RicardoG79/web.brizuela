@@ -43,14 +43,28 @@ main{
     padding: 10px;
 }
 .carousel-fixed-height {
-  height: 500px; /* Cambiá esta altura a la que quieras */
+  height: 500px;
+}
+
+.carousel-fixed-height .carousel-inner,
+.carousel-fixed-height .carousel-item,
+.carousel-fixed-height .carousel-item img {
+  height: 100%;
 }
 
 .carousel-fixed-height .carousel-item img {
-  height: 100%;
+  width: 100%;
   object-fit: cover;
+  object-position: center center;
+  border-radius: 10px; /* opcional, para un look más suave */
 }
 
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-fixed-height {
+    height: 300px;
+  }
+}
 
 .des{
     color: #333;
@@ -96,6 +110,38 @@ main{
 
 .banner-bg .contenido {
   z-index: 2;
+}
+
+/* Estilo para las cards de cada nivel: */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  overflow: hidden;
+}
+
+.card:hover,
+.card:active {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top,
+.card:active .card-img-top {
+  transform: scale(1.05);
 }
 
 /* Estilo para la seccion novedades: */
