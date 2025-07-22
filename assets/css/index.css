@@ -56,7 +56,6 @@ main{
   width: 100%;
   object-fit: cover;
   object-position: center center;
-  border-radius: 10px; /* opcional, para un look más suave */
 }
 
 /* Para pantallas pequeñas */
