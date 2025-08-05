@@ -1,18 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Breve descripción de tu página">
-    <meta name="keywords" content="Palabras clave, SEO">
-    <meta name="author" content="Tu nombre o compañía">
-    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Nivel Inicial del Instituto Brizuela. Información, docentes, contacto y archivos descargables.">
+    <meta name="keywords" content="Nivel Inicial, Instituto Brizuela, educación, jardín, Córdoba, docentes, contacto">
+    <meta name="author" content="Instituto Brizuela">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/67f433d821.js" crossorigin="anonymous"></script>
     <!-- Título de la página -->
     <title>Instituto Brizuela</title>
 
     <!-- Enlace a las hojas de estilo (CSS) -->
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/nivel_superior.css">
+    
+    <link rel="stylesheet" href="assets/css/nivel_inicial.css">
     
 
     <!-- Enlace a fuentes externas (Google Fonts) y boostrap-->
@@ -29,43 +32,50 @@
 </head>
 <body>
     <!-- Código de header -->
-    <header>    
-		<nav class="navbar" data-bs-theme="dark">
-            <div class="logo">
-                <a href="index.html"><img src="./assets/img/logo1.ico" alt="Logo del Insituto"></a>
+    <header>
+    
+        <div class="header_superior">
+            <div class="escudo">
+                <img src="/assets/img/logo1.png" alt="">
             </div>
-            
-        <ul class="nav-links">
-				<li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                <li><a href="nuestro_colegio.html"><i class="fa-solid fa-street-view"></i>Nuestro Colegio</a></li>
+            <div class="search">
+                <div class="logo">
+                    <img src="/assets/img/Diocesis.png" alt="">
+                </div>
+            </div>
+        </div>
 
-				<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="propuesta_educativa.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-handshake"></i> Propuesta Educativa
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/nivel_inicial.html">Nivel Inicial</a></li>
-                        <li><a class="dropdown-item" href="/nivel_primario.html">Nivel Primario</a></li>
-                        <li><a class="dropdown-item" href="/nivel_secundario.html">Nivel Secundario</a></li>
-                        <li><a class="dropdown-item" href="/nivel_superior.html">Nivel Superior</a></li>
+        <div class="container_menu">
+            <div class="menu">
+                <input type="checkbox" id="check_menu">
+                <label id="label_check" for="check_menu">
+                    <i class="fa-solid fa-bars icon_menu"></i>
+                </label>
+                 <nav>
+                <ul>
+                    <li><a href="/index.html" id="selected"> </a></li>
+                    <li><a href="/nuestro_colegio.html">Nuestro Colegio</a></li>
+                    <li><a href="#">Propuesta Educativa</a>
+                    <ul>
+                        <li><a href="/propuesta_educativa.html">Conocé todas nuestras propuestas</a>
+                        <li><a href="/nivel_inicial.html">Nivel Inicial</a></li>
+                        <li><a href="/nivel_primario.html">Nivel Primario</a></li>
+                        <li><a href="/nivel_secundario.html">Nivel Secundario</a></li>
+                        <li><a href="/nivel_superior.html">Nivel Superior</a></li>
                     </ul>
-                </li>
-				
-                
-                    <li><a href="actividad_pastoral.html"><i class="fa-solid fa-handshake"></i>Actividad Pastoral</a></li>
-                <li><a href="administración.html"><i class="fa-solid fa-handshake"></i>Administración</a></li>
-				
-			</ul>
-        <div class="burger" onclick="toggleMenu()">  <!-- validación para menu hamburguesa -->
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+                    
+                    </li>
+                    <li><a href="/actividad_pastoral.html">Actividad Pastoral</a></li>
+                    <li><a href="/administración.html">Administración</a></li>
+                </ul>
+            </nav>
+
             </div>
-            <div class="lema">
-                <h2>"A la luz del Evangelio, transformando la cultura <h2>  
-            </div>
-		</nav>
+           
+        </div>
+	
 	</header>
+
 
 
         <!-- Contenido principal de la página -->
