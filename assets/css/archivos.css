@@ -1,0 +1,60 @@
+/* Fondo general suave */
+body {
+    background-color: #E1F5FE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Encabezado */
+header {
+    background: #0288D1;
+}
+
+/* Estilo para la lista */
+.list-group-item {
+    transition: all 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Colores de iconos por tipo */
+.bi-file-earmark-pdf {
+    color: #e74c3c !important; /* Rojo PDF */
+}
+
+.bi-file-earmark-word {
+    color: #2e86de !important; /* Azul Word */
+}
+
+.bi-image {
+    color: #27ae60 !important; /* Verde imagen */
+}
+
+.bi-link-45deg {
+    color: #7f8c8d !important; /* Gris para links */
+}
+
+/* Animación iconos */
+.list-group-item i:first-child {
+    transition: transform 0.2s ease-in-out;
+}
+
+.list-group-item:hover i:first-child {
+    transform: scale(1.2);
+}
+
+/* Botón volver */
+.btn-secondary {
+    border: none;
+    border-radius: 50px;
+    padding: 0.6rem 1.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: #EF8C30;
+}
