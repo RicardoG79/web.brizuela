@@ -1,5 +1,5 @@
 footer {
-    background: radial-gradient(circle, rgb(6, 48, 112, 1) 10%, rgba(6, 55, 117, 0.9) 40%, rgba(6, 65, 117, 0.8) 90%, rgba(6, 85, 125, 0.6) 100%);
+    background: #E1F5FE;
     color: white;
     padding: 10px;
     margin-bottom: 0;
@@ -9,8 +9,10 @@ footer p{
     vertical-align: middle;
     text-align: right;
     width: 90%;
+    color: black;
 }
-.icons {
+/* Lo que se comenta a continuación es el logo diocesano para el footer */
+/* .icons {
     bottom: 8px;
     display: inline-block;
     flex-direction: row;
@@ -29,10 +31,107 @@ transition: transform 0.3s;
 
 .floating-icon img:hover {
 transform: scale(1.1);
+} */
+
+/* Botón circular en el centro del footer */
+.btn-popup {
+  width: var(--btn-size);
+  height: var(--btn-size);
+  background: var(--btn-bg);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s, transform 0.3s;
 }
 
-/* Código para el texto emergente de contacto*/
-.footer{
+/* Sutil “pop” al hacer hover */
+.btn-popup:hover {
+  background: var(--btn-hover);
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Tooltip encima del botón */
+.btn-popup[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 8px);
+  transform: translateY(-50%);
+  background: var(--tooltip-bg);
+  color: rgb(5, 3, 125);
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  pointer-events: none;
+  opacity: 1;
+}
+
+/* Popup container */
+.popup {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: var(--overlay-bg);
+  transform: translateY(100%);
+  transition: transform 0.3s ease-out;
+  z-index: 2;
+}
+
+.popup.open {
+  transform: translateY(0);
+}
+
+/* Ventana emergente */
+.popup-inner {
+  background: var(--popup-bg);
+  width: 200%;
+  max-width: 800px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 1.5rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  background-color: #E1F5FE;
+}
+
+/* Botón de cierre */
+.close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Zona para tu contenido */
+.popup-content {
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .btn-popup {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .popup-inner {
+    padding: 1rem;
+  }
+}
+/* Código para el texto emergente de contacto */
+/* Comento el siguiente código para que poder modificarlo */
+/* .footer{
     display: inline-block;
     align-items: center;
     vertical-align: middle;
@@ -49,9 +148,9 @@ transform: scale(1.1);
     color: #ff0000;
     cursor: pointer;
     font-weight: bold;
-}
-.popup {
-    display: none; /* Oculto por defecto */
+} */
+/* .popup {
+    display: none; Oculto por defecto 
     position: fixed;
     bottom: 0;
     left: 50px;
@@ -62,7 +161,7 @@ transform: scale(1.1);
     padding: 20px;
     text-align: center;
     align-items: center;
-}
+} */
 
 
 @media screen and (max-width: 768px){
