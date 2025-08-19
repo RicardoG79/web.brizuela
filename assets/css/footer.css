@@ -81,6 +81,7 @@ transform: scale(1.1);
   transform: translateY(100%);
   transition: transform 0.3s ease-out;
   z-index: 2;
+  text-align: center;
 }
 
 .popup.open {
@@ -99,6 +100,7 @@ transform: scale(1.1);
   overflow-y: auto;
   position: relative;
   background-color: #E1F5FE;
+ 
 }
 
 /* Botón de cierre */
@@ -115,7 +117,10 @@ transform: scale(1.1);
 /* Zona para tu contenido */
 .popup-content {
   margin-top: 1rem;
+  text-align: right;
 }
+
+
 
 /* Responsive */
 @media (max-width: 480px) {
