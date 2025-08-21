@@ -17,6 +17,9 @@
     
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/actividad_pastoral.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
 
     <!-- Enlace a fuentes externas (Google Fonts) y boostrap-->
@@ -77,19 +80,237 @@
 	
 	</header>
     <main>
-         <div class="container">
-            <h1>Actividad Pastoral</h1>
-            <p>Contenido de la actividad pastoral del Instituto Brizuela.</p>
-            <!-- Aquí puedes agregar más contenido relacionado con la actividad pastoral -->
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam temporibus ad odit culpa id reprehenderit doloribus maiores fugit ab, laudantium obcaecati expedita. Ratione necessitatibus aut quos iste dolore nostrum molestias?
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime corrupti error eveniet voluptatum expedita a in quos sint ratione, ipsa, neque illum tenetur dolorem, necessitatibus deserunt. Sapiente inventore omnis impedit?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur quia minus commodi odio id autem laborum rerum, mollitia velit nulla non, impedit eaque modi neque magnam eligendi, voluptas quam!   
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo corporis assumenda error veniam exercitationem maiores harum quis alias eum porro debitis accusantium, recusandae cum tenetur officiis facere! Cumque, at facilis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, vel eligendi? Nam, mollitia! Laboriosam nemo, unde ipsum ea veniam totam ipsam corporis officia eum beatae laudantium doloremque provident. Voluptates, maiores.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolore id quae minus nobis fugit commodi, doloribus beatae cupiditate voluptates in corporis recusandae natus, esse sed sunt ex nulla magnam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consectetur sed fuga aliquam quod, ipsum nostrum, officiis nam pariatur magni hic eum in ratione. Sit, illum repellendus. Praesentium, quisquam sunt.
+
+        <!-- SECCIÓN IDEARIO QUIENES SOMOS, MISION VISION VALORES- se puede acortar o quietar info ya que se tomó como
+         ejemplo de lo que puede ir en esta sección -->
+
+        <!-- Encabezado Ideario-->
+        <section class="ideario-header text-center text-white animate__animated animate__fadeIn">
+            <div class="container py-5">
+                <h1 class="fw-bold">Nuestro Ideario Institucional</h1>
+                <p class="lead">Principios que guían nuestro camino</p>
+            </div>
+        </section>
+
+        <!-- Quiénes somos -->
+        <section class="py-5 bg-light animate__animated animate__fadeInLeft">
+            <div class="container d-flex flex-wrap align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold titulo-subrayado">Quiénes somos</h2>
+                    <p>Somos una institución educativa católica comprometida con la formación integral de nuestros estudiantes, desde el Nivel Inicial hasta el Nivel Superior. Inspirados en el Evangelio y la Doctrina Social de la Iglesia, promovemos el desarrollo académico, humano y espiritual de cada persona, formando ciudadanos responsables, solidarios y comprometidos con el bien común.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="assets/img/ig-primario.jpg" alt="Colegio" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </section>
+
+        <!-- Misión -->
+        <section class="py-5 section-alt animate__animated animate__fadeInRight">
+            <div class="container d-flex flex-wrap align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <h2 class="fw-bold titulo-subrayado">Nuestra misión</h2>
+                    <p>Educar con excelencia académica y profunda formación en valores cristianos, para que nuestros alumnos puedan descubrir y desarrollar sus talentos, vivir su fe y servir a la sociedad con compromiso y amor.</p>
+                </div>
+                <div class="col-md-6 order-md-1 text-center">
+                    <img src="assets/img/Primario.jpg" alt="Misión" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </section>
+
+        <!-- Visión -->
+        <section class="py-5 bg-light animate__animated animate__fadeInLeft">
+            <div class="container d-flex flex-wrap align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold titulo-subrayado">Nuestra visión</h2>
+                    <p>Ser una comunidad educativa referente en la ciudad de Córdoba por su calidad académica, su formación integral y su compromiso con la verdad, la justicia y la paz, formando líderes capaces de transformar la sociedad desde los valores del Evangelio.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="assets/img/primaria01.jpg" alt="Visión" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </section>
+
+        <!-- Valores -->
+        <section id="valores" class="py-5 section-alt animate__animated animate__fadeInUp">
+            <div class="container">
+                <h2 class="fw-bold text-center titulo-subrayado mb-4">Nuestros valores</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow border-0 text-center">
+                            <div class="card-body">
+                                <h5 class="fw-bold">Fe viva</h5>
+                                <p>Cultivamos una relación personal con Dios a través de la oración y la vida sacramental.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow border-0 text-center">
+                            <div class="card-body">
+                                <h5 class="fw-bold">Respeto</h5>
+                                <p>Tratamos a cada persona con dignidad y empatía.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow border-0 text-center">
+                            <div class="card-body">
+                                <h5 class="fw-bold">Solidaridad</h5>
+                                <p>Promovemos el servicio a los demás, en especial a los más necesitados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compromiso -->
+        <section class="py-5 bg-light text-center animate__animated animate__fadeInUp">
+            <div class="container">
+                <h2 class="fw-bold titulo-subrayado">Compromiso de la comunidad</h2>
+                <p class="mb-0">Nuestro ideario compromete a directivos, docentes, familias y estudiantes a vivir de acuerdo con estos principios, trabajando juntos para construir una comunidad educativa donde la fe, la esperanza y el amor sean el centro de todas nuestras acciones.</p>
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN ACTIVIDAD PASTORAL EN MODO CARRUSEL -->
+        <section class="seccion-pastoral py-5 mb-5">
+            <div class="container">
+                <h2 class="text-center text-white fw-bold titulo-subrayado mb-4">Actividades Pastorales</h2>
+
+                <div id="pastoralCarousel" class="carousel slide" data-bs-ride="false">
+
+                    <div class="carousel-inner">
+
+                        <!-- Card 1 -->
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <div class="card pastoral-card shadow">
+                                    <div class="row g-0">
+                                        <div class="col-md-6">
+                                            <img src="assets/img/Estudiantes1.jpg" class="img-fluid rounded-start" alt="Misa de inicio">
+                                        </div>
+                                        <div class="col-md-6 d-flex flex-column justify-content-center p-3">
+                                            <h5 class="fw-bold pb-3">Misa de inicio de clases</h5>
+                                            <p class="fw-normal">Celebramos juntos el comienzo del ciclo lectivo con una misa comunitaria...</p>
+                                            <button class="btn btn-acento mt-auto" data-bs-toggle="modal" data-bs-target="#modal1">Ver más</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="card pastoral-card shadow">
+                                    <div class="row g-0">
+                                        <div class="col-md-6">
+                                            <img src="assets/img/Estudiantes2.jpg" class="img-fluid rounded-start" alt="Campaña solidaria">
+                                        </div>
+                                        <div class="col-md-6 d-flex flex-column justify-content-center p-3">
+                                            <h5 class="fw-bold pb-3">Campaña solidaria</h5>
+                                            <p class="fw-normal">Los estudiantes organizaron una colecta de alimentos y ropa para familias necesitadas...</p>
+                                            <button class="btn btn-acento mt-auto" data-bs-toggle="modal" data-bs-target="#modal2">Ver más</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="card pastoral-card shadow">
+                                    <div class="row g-0">
+                                        <div class="col-md-6">
+                                            <img src="assets/img/Estudiantes3.jpg" class="img-fluid rounded-start" alt="Retiro espiritual">
+                                        </div>
+                                        <div class="col-md-6 d-flex flex-column justify-content-center p-3">
+                                            <h5 class="fw-bold pb-3">Retiro espiritual</h5>
+                                            <p class="fw-normal">Un espacio de reflexión y encuentro personal con Dios para estudiantes de secundaria...</p>
+                                            <button class="btn btn-acento mt-auto" data-bs-toggle="modal" data-bs-target="#modal3">Ver más</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#pastoralCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#pastoralCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Misa de inicio de clases</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body modal-scroll">
+                        <img src="assets/img/Estudiantes1.jpg" class="img-fluid rounded mb-3" alt="Misa">
+                        <p class="fw-normal">
+                        Iniciamos el año escolar con una misa presidida por el párroco local, en la que participaron alumnos, docentes y familias.  
+                        Fue un momento de oración y reflexión para poner en manos de Dios los desafíos del ciclo lectivo.  
+                        Los estudiantes de nivel secundario colaboraron con las lecturas y el coro, generando un clima de comunidad y alegría.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal2" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Campaña solidaria</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body modal-scroll">
+                        <img src="assets/img/Estudiantes2.jpg" class="img-fluid rounded mb-3" alt="Solidaridad">
+                        <p class="fw-normal">
+                        Durante el mes de junio, los alumnos de primaria y secundaria llevaron adelante una campaña solidaria.  
+                        Se recolectaron alimentos no perecederos, ropa de abrigo y útiles escolares para entregar a familias de la comunidad.  
+                        La actividad se vivió con gran entusiasmo y compromiso, reforzando los valores de solidaridad y empatía.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="modal3" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Retiro espiritual</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body modal-scroll">
+                        <img src="assets/img/Estudiantes3.jpg" class="img-fluid rounded mb-3" alt="Retiro">
+                        <p class="fw-normal">
+                        Los estudiantes de nivel secundario participaron de un retiro espiritual en las sierras de Córdoba.  
+                        Fue una experiencia de encuentro con Dios y con sus compañeros, con momentos de reflexión, dinámicas grupales y oración.  
+                        La actividad ayudó a fortalecer los lazos de amistad y la vivencia de la fe en comunidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
+
     <section class="boton">
 <!-- El botón flotante está dentro de capsula_footer.js -->
     </section>
@@ -101,7 +322,11 @@
     <script src="assets/js/index.js"></script>
     <script src="assets/js/img.js"></script>
     <script src="assets/js/capsula_footer.js"></script>
-  
-  </body>
+
+    <!-- JS de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-qB9hXScN+ZBz9XbW9GHMHL2c5Zlq0EfjWk7Vm7K46D3xY7aSGV3wA92m7YY04h8g" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
   
 </html>
