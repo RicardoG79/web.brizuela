@@ -84,8 +84,6 @@ img {
   color: #fff;
 }
 
-
-
 /* Modal con scroll */
 .modal-scroll {
     max-height: 70vh;
@@ -94,3 +92,39 @@ img {
 
 
 
+/* ESTILOS NOTICIAS DE LA DIÓCESIS */
+.noticias-diocesanas {
+  background: linear-gradient(135deg, #002244, #004488); /* azul degradé */
+  color: #fff;
+}
+
+.banner-noticias {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  color: #fff;
+}
+
+.banner-noticias h2 {
+  color: #EF8C30;
+  font-size: 2rem;
+}
+
+.banner-noticias p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.btn-acento {
+  background-color: #EF8C30;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-acento:hover {
+  background-color: #d47420;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(239, 140, 48, 0.4);
+}
