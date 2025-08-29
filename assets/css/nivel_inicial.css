@@ -3,6 +3,11 @@
 @import url("footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* Si les gusta como queda inicial debemos poner este css en todos los otros niveles 
+y ponerle nombre general ;)*/
+
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +25,24 @@ header {
   background: #E1F5FE;
 }
 
+/* Subrayado con acento Usar en cada título para darle a todos el mismo estilo*/
+.titulo-subrayado {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 40px;
+}
+.titulo-subrayado::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background-color: #EF8C30;
+    border-radius: 2px;
+}
+
+
 /* Listas personalizadas en sección Nivel Inicial */
 section ul {
   list-style: none; /* Quita los bullets */
@@ -36,17 +59,10 @@ section ul li {
 
 /* Icono de la lista */
 section ul li::before {
-  content: "✔"; /* Se puede cambiar por "➜", "•", etc */
+  content: "•"; /* Se puede cambiar por "➜", "✔", etc */
   position: absolute;
   left: 0;
   top: 0;
   color: #0288D1;
   font-weight: bold;
-}  
-
-
-
-
-
-  
-
+}
