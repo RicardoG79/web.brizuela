@@ -20,76 +20,29 @@ header {
   background: #E1F5FE;
 }
 
-
-.titulo {
-  background-color: rgb(255, 255, 255);
+/* Listas personalizadas en sección Nivel Inicial */
+section ul {
+  list-style: none; /* Quita los bullets */
+  padding-left: 0;
+  margin-top: 0.5rem;
 }
 
-.titulo-seccion {
-    text-align: center;
-    margin: 80px;
-    color: rgb(9, 134, 244);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    justify-content:center;
-  
-  }
-  .titulo-seccion-2{
-    text-align: center;
-    margin: 80px;
-    padding: 60px 20px;
-    color: rgb(9, 134, 244);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    justify-content:center;
-  }
-  .ubicacion-tittle{
-    text-align: center;
-    margin: 80px;
-    text-decoration: dashed;
-    color: rgb(9, 134, 244);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    justify-content:center;
-  }
-
- .mapa-inicial {
-  width: 100%;
-  max-width: 100%;
-  height: 300px;
+section ul li {
+  position: relative;
+  padding-left: 1.8rem; /* espacio para el icono */
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 
-.container {
-  margin-top: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; 
-  align-items: center; 
-  gap: 20px;
-  max-width: 1200px;
-  margin-inline: auto;
-}
-  
-  .texto-contenido{
-    flex: 1 1 300px;
-    margin-top: 35px;
-  }
- .imagenJardin{
- flex: 1 1 300px;
- text-align: center;
-  
- }
-
- .imagenJardin img{
-  width: 100%;
-  max-width: 400px;
-  height: auto;
- }
-
- .tituloCards {
-  width: 100%; /* ancho completo de la pantalla */
-  text-align: center;
-  padding: 2rem 0;
-  color: rgb(9, 134, 244);
-}
-
+/* Icono de la lista */
+section ul li::before {
+  content: "✔"; /* Se puede cambiar por "➜", "•", etc */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0288D1;
+  font-weight: bold;
+}  
 
 
 
