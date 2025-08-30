@@ -81,7 +81,7 @@ transform: scale(1.1);
   transform: translateY(100%);
   transition: transform 0.3s ease-out;
   z-index: 2;
-  text-align: center;
+  text-align: left;
 }
 
 .popup.open {
@@ -118,6 +118,11 @@ transform: scale(1.1);
 .popup-content {
   margin-top: 1rem;
   text-align: right;
+}
+.popup-content p {
+  margin-bottom: 1rem;
+  color: black;
+  text-align: left;
 }
 
 
