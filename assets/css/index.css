@@ -67,6 +67,8 @@ main{
   width: 100%;
   object-fit: cover;
   object-position: center center;
+  padding: 0.22rem;
+  border-radius: 1.5%;
 }
 
 /* Para pantallas pequeñas */
