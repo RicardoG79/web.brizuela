@@ -1,0 +1,92 @@
+@import url("header.css");
+@import url("footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* --- Estilos para la sección de Contacto --- */
+.contacto-container {
+    padding: 60px 20px;
+    background-color: #f8f9fa; /* Fondo gris claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-content {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.page-description {
+    font-family: cursive;
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.contacto-card {
+    background-color: #fff; /* Fondo de la tarjeta blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 20px;
+    border-bottom: 2px solid  #EF8C30;
+    padding-bottom: 10px;
+}
+
+.card-info {
+    font-family: 'Open Sans', sans-serif; /* Puedes usar otra fuente si prefieres */
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card-info i {
+    color: #366099; /* Color de tus íconos principales */
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+/* --- Media Queries para responsividad --- */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .page-description {
+        font-size: 1.2rem;
+    }
+
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -190,7 +190,7 @@ nav ul li ul li a:hover {
   display: none;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE*/
 @media screen and (max-width: 720px) {
   .menu,
   .header_superior {
