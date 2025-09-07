@@ -8,12 +8,18 @@ document.addEventListener("DOMContentLoaded", () => {
   function update(){
     slides.forEach((s, i) => {
       s.classList.remove("active", "left", "right");
+      const desc = s.querySelector('.nc-desc');
       if(i === index){
         s.classList.add("active");
+        if(desc) desc.style.display = "block";
       } else if(i === (index - 1 + slides.length) % slides.length){
         s.classList.add("left");
+        if(desc) desc.style.display = "none";
       } else if(i === (index + 1) % slides.length){
         s.classList.add("right");
+        if(desc) desc.style.display = "none";
+      } else {
+        if(desc) desc.style.display = "none";
       }
     });
   }

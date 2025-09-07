@@ -30,11 +30,12 @@ main{
     
 }
 .des{
-    text-align: center;
-    font-size: 1.5rem;
+  font-family: 'Alkatra', display;  
+  text-align: center;
+    
     color: #02062a;
     margin: 20px 0;
-    font-style: italic;    
+      
 }
 .main::before {
     content: "";
