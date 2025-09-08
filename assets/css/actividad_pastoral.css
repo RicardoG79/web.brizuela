@@ -1,0 +1,130 @@
+/* Paleta de colores */
+:root {
+    --azul-oscuro: #0288D1;
+    --azul-medio: #03A9F4;
+    --azul-claro: #4FC3F7;
+    --celeste: #B3E5FC;
+    --celeste-muy-claro: #E1F5FE;
+    --naranja: #EF8C30;
+}
+
+
+/* Encabezado ideario */
+.ideario-header {
+    background-color: #4FC3F7;
+}
+
+
+/* Subrayado con acento */
+.titulo-subrayado {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 40px;
+}
+.titulo-subrayado::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background-color: #EF8C30;
+    border-radius: 2px;
+}
+
+/* Fondo alterno */
+.section-alt {
+    background-color: var(--celeste-muy-claro);
+}
+
+/* Cards */
+.card {
+    background-color: var(--celeste);
+    color: #000;
+    border-radius: 10px;
+}
+
+/* Imagenes */
+img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Sombra */
+.shadow {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Pastoral: */
+.seccion-pastoral {
+  background-color: var(--azul-oscuro);
+  padding: 2rem 0;
+}
+
+/* Carrusel pastoral */
+.pastoral-card {
+    max-width: 850px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.pastoral-card.h5 {
+    padding-bottom: 10%;
+}
+
+.btn.btn-acento {
+  color: #0288D1;
+  padding: 6px 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.btn-acento:hover {
+  background-color: #0288D1;
+  color: #fff;
+}
+
+/* Modal con scroll */
+.modal-scroll {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+
+
+/* ESTILOS NOTICIAS DE LA DIÓCESIS */
+.noticias-diocesanas {
+  background: linear-gradient(135deg, #002244, #004488); /* azul degradé */
+  color: #fff;
+}
+
+.banner-noticias {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  color: #fff;
+}
+
+.banner-noticias h2 {
+  color: #EF8C30;
+  font-size: 2rem;
+}
+
+.banner-noticias p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.btn-acento {
+  background-color: #EF8C30;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-acento:hover {
+  background-color: #d47420;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(239, 140, 48, 0.4);
+}

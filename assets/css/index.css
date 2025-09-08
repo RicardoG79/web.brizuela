@@ -30,11 +30,12 @@ main{
     
 }
 .des{
-    text-align: center;
-    font-size: 1.5rem;
+  font-family: 'Alkatra', display;  
+  text-align: center;
+    
     color: #02062a;
     margin: 20px 0;
-    font-style: italic;    
+      
 }
 .main::before {
     content: "";
@@ -67,6 +68,8 @@ main{
   width: 100%;
   object-fit: cover;
   object-position: center center;
+  padding: 0.22rem;
+  border-radius: 1.5%;
 }
 
 /* Para pantallas pequeñas */
@@ -183,7 +186,7 @@ main{
     opacity: 0.9;
   }
 
-  /* Stilo para contacto*/
+  /* estilo para contacto*/
 .ratio_personal {
   width: 100%;
   height: 100%; /* Que ocupe toda la altura disponible */
@@ -254,3 +257,164 @@ iframe {
     }
 }
 
+/*código botón flotante del home*/
+.floating-home-btn {
+    position: fixed;
+    top: 85%;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.floating-home-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.floating-home-btn i {
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .floating-home-btn {
+        width: 40px;
+        height: 40px;
+        right: 15px;
+    }
+
+    .floating-home-btn i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-home-btn {
+        width: 35px;
+        height: 35px;
+        right: 10px;
+    }
+
+    .floating-home-btn i {
+        font-size: 18px;
+    }
+}
+
+/*aquí comienza el código para el carrusel de novedades*/
+:root{
+  --nc-media-h: 220px;
+}
+
+body{ margin:0; font-family:sans-serif; }
+
+.news-coverflow{
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.nc-title{ margin-bottom: 20px; }
+
+.nc-viewport{
+  position: relative;
+  overflow: hidden;
+}
+
+.nc-track{
+  position: relative;
+  height: 320px; /* espacio para las cards */
+}
+
+.nc-slide{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60%;
+  max-width: 500px;
+  opacity: 0;
+  transform: translateX(-50%) scale(0.7);
+  transition: transform .5s ease, opacity .5s ease;
+}
+
+.nc-slide.active{
+  opacity: 1;
+  z-index: 3;
+  transform: translateX(-50%) scale(1);
+}
+
+.nc-slide.left{
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(-110%) scale(0.85);
+}
+
+.nc-slide.right{
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(10%) scale(0.85);
+}
+
+.nc-media{
+  width: 100%;
+  height: var(--nc-media-h);
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.nc-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nc-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+}
+.nc-btn--prev{ left: 10px; }
+.nc-btn--next{ right: 10px; }
+
+@media (max-width:600px){
+  .nc-slide{ width: 80%; }
+  .nc-media{ height: 180px; }
+}
+
+/* adaptable para pantallas pequeñas */
+@media (max-width:600px){
+  .nc-slide{ 
+    width: 90%;              /* más angosto para mobile */
+  }
+  .nc-media{ 
+    height: 180px; 
+  }
+  .nc-desc{ 
+    font-size: 0.85rem; 
+  }
+
+  /* 👇 ocultamos laterales en pantallas pequeñas */
+  .nc-slide.left,
+  .nc-slide.right{
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8);
+    pointer-events: none;   /* no clickeables */
+  }
+}

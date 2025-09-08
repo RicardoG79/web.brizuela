@@ -23,16 +23,39 @@
   .col{
     text-align:left;
   }
-  .btn {
-justify-content: center;
-width: 150%;
-  background-color: rgb(1, 136, 190);
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+ .clearfix {
+    overflow: auto;
+    margin: 10px;
+   
+  }
+/* Estilo imagen flotante */
+.col-md-6 {
+  overflow: auto;
+  margin: 10px;
+  max-width: 250px;
 }
-.btn:hover {
-  background-color: rgb(0, 102, 153);
+
+.card-body {
+    display: inline-flexbox;
+    flex-direction: row;
+}
+
+.bunny-font {
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    color: rgb(1, 136, 190);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-body{
+  background: rgb(237, 250, 249);
+}
+.card-title1{
+  color: rgb(4, 91, 126);  
+}
+.container .my-4 {
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin: 5px;
 }

@@ -20,7 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:wght@100..400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=akaya-telivigala:400|alkatra:400" rel="stylesheet" />
     <!-- Enlace a iconos de font -->
 
 
@@ -115,8 +116,8 @@
 
 
           <!-- Pre contenido principal -->
-        <div class="des">
-            <h4>"Colegio del Señor, bendita sea tu misión venturosa de enseñar"
+        <div >
+            <h4 class="des">"Cuando se anunció la puesta en marcha de la Institución, el Padre Gómez Dávila decidió hacer funcionar el Colegio en dependencias de la casa parroquial. Sólo contó con dos elementos: el elemento humano, y una fe inmensa en Dios y la Virgen Dolorosa” (testimonio sobre la fundación del Brizuela).
             </h4>            
         </div>
         <!-- Contenido principal-->
@@ -128,8 +129,8 @@
                         <img src="./assets/img/nivel-inicial/jardin01.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">NIVEL INICIAL</h5>
-                        <p class="card-text">Texto de la tarjeta.</p>
-                        <a href="./nivel_inicial.html" class="btn btn-primary">Ver más</a>
+                        <p class="card-text">El nivel Inicial introduce al maravilloso mundo de la educación.</p>
+                        <a href="./nivel_inicial.html" class="btn btn-primary">Ingresar</a>
                         </div>
                     </div>
                 </div>
@@ -138,8 +139,8 @@
                         <img src="./assets/img/nivel-primario/primario03.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">NIVEL PRIMARIO</h5>
-                        <p class="card-text">Texto de la tarjeta.</p>
-                        <a href="./nivel_primario.html" class="btn btn-primary">Ver más</a>
+                        <p class="card-text">El nivel Primario fortalece el camino de la educación, y el encuentro.</p>
+                        <a href="./nivel_primario.html" class="btn btn-primary">Ingresar</a>
                         </div>
                     </div>
                 </div>
@@ -148,8 +149,8 @@
                         <img src="./assets/img/nivel-secundario/secundario03.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">NIVEL SECUNDARIO</h5>
-                        <p class="card-text">Texto de la tarjeta.</p>
-                        <a href="./nivel_secundario.html" class="btn btn-primary">Ver más</a>
+                        <p class="card-text">El nivel Secundario acompaña a los estudiantes en su formación integral.</p>
+                        <a href="./nivel_secundario.html" class="btn btn-primary">Ingresar</a>
                         </div>
                     </div>
                 </div>
@@ -158,13 +159,58 @@
                         <img src="./assets/img/Secundario.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">NIVEL SUPERIOR</h5>
-                        <p class="card-text">Texto de la tarjeta.</p>
-                        <a href="./nivel_superior.html" class="btn btn-primary">Ver más</a>
+                        <p class="card-text">El nivel Superior prepara a los jóvenes en una formación profesional, y humana.</p>
+                        <a href="./nivel_superior.html" class="btn btn-primary">Ingresar</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+<!-- Sección para el carrusel de novedades:-->
+ <section class="news-coverflow">
+    <h2 class="nc-title">Novedades</h2>
+    <h5 class="nc-title">Para más información, ingrese al nivel correspondiente.</h5>
+
+    <div class="nc-viewport">
+      <button class="nc-btn nc-btn--prev" data-prev aria-label="Anterior">&#10094;</button>
+
+      <div class="nc-track">
+        <article class="nc-slide">
+          <div class="nc-media">
+            <img src="assets/img/nivel-inicial/jardin01.jpg" alt="Noticia 1" />
+          </div>
+         
+          <p class="nc-desc">Empezamos con las inscripciones <br> para los más pequeños.</p>
+        </article>
+
+        <article class="nc-slide">
+          <div class="nc-media">
+            <img src="assets/img/nivel-primario/primario01.jpg" alt="Noticia 2" />
+          </div>
+          
+          <p class="nc-desc">Acto de inicio de actividades</p>
+        </article>
+
+        <article class="nc-slide">
+          <div class="nc-media">
+            <img src="assets/img/nivel-secundario/secundario01.jpg" alt="Noticia 3" />
+          </div>
+          
+          <p class="nc-desc">En el secundario, <br>festejando el 9 de julio.</p>
+        </article>
+
+        <article class="nc-slide">
+          <div class="nc-media">
+            <img src="assets/img/nivel-superior/superior01.webp" alt="Noticia 4" />
+          </div>
+          
+          <p class="nc-desc">En el nivel Superior, <br> estamos dictando el Trayecto Pedagógico.</p>
+        </article>
+      </div>
+
+      <button class="nc-btn nc-btn--next" data-next aria-label="Siguiente">&#10095;</button>
+    </div>
+  </section>
 
         <!-- Sección para |novedades | archivos importantes, matriculación, mesas de exámenes|-->
         <!-- Sección archivos importantes, matriculación, mesas de exámenes:-->
@@ -185,7 +231,7 @@
                         <div class="accordion-body text-white">
                             Podés descargar CUS - ISA - PDF para matriculación.  
                             <br>
-                            <a href="./archivos_inicial.html" class="btn btn-light mt-2" target="_blank" >Ir a sección</a>
+                            <a href="./archivos_inicial.html" class="btn btn-light mt-2" target="_blank" >Descargar material</a>
                         </div>
                         </div>
                     </div>
@@ -202,7 +248,7 @@
                         <div class="accordion-body text-white">
                             Podés descargar CUS - ISA - PDF para matriculación.  
                             <br>
-                            <a href="./archivos_primario.html" class="btn btn-light mt-2" target="_blank">Ir a sección</a>
+                            <a href="./archivos_primario.html" class="btn btn-light mt-2" target="_blank">Descargar material</a>
                         </div>
                         </div>
                     </div>
@@ -218,7 +264,7 @@
                         <div class="accordion-body text-white">
                             Podés descargar CUS - ISA - PDF para matriculación.  
                             <br>
-                            <a href="./archivos_secundario.html" class="btn btn-light mt-2" target="_blank">Ir a sección</a>
+                            <a href="./archivos_secundario.html" class="btn btn-light mt-2" target="_blank">Descargar material</a>
                         </div>
                         </div>
                     </div>
@@ -234,7 +280,7 @@
                         <div class="accordion-body text-white">
                             Podés descargar CUS - ISA - PDF para matriculación.  
                             <br>
-                            <a href="./archivos_superior.html" class="btn btn-light mt-2" target="_blank">Ir a sección</a>
+                            <a href="./archivos_superior.html" class="btn btn-light mt-2" target="_blank">Descargar material</a>
                         </div>
                         </div>
                     </div>
@@ -256,7 +302,7 @@
 
         <!-- Sección Novedades con tarjetas -->
         <section class="text-center py-5 bg-light">
-            <h2 class="mb-4 text-secondary fw-bold">Novedades</h2>
+            <h2 class="mb-4 text-secondary fw-bold">Nuestras redes sociales</h2> <hr>
             <p class="mb-5">Seguinos en Instagram según tu nivel educativo:</p>
 
             <div class="container">
@@ -309,98 +355,78 @@
                 </div>
             </div>
         </section>
-        <!-- Sección CONTACTO -->
 
-        <section class="contacto py-5 bg-light">
-        <div class="container">
-            <h2 class="text-secondary fw-bold mb-4">Contacto</h2>
-            <div class="row align-items-stretch g-4 justify-content-center text-center text-md-start">
-                <!-- Columna 1: Inicial + Primario -->
-                <div class="col-md-3">
-                    <div>
-                    <h4 class="text-primary">Nivel Inicial</h4>
-                    <p class="mb-2">
-                        <i class="bi bi-telephone-fill text-primary me-2"></i>
-                        <span class="text-dark">+54 3544 xxx xxx</span>
-                    </p>
-                    <p class="mb-4">
-                        <i class="bi bi-envelope-fill text-primary me-2"></i>
-                        <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
-                    </p>
-
-                    <h4 class="text-primary">Nivel Primario</h4>
-                    <p class="mb-2">
-                        <i class="bi bi-telephone-fill text-primary me-2"></i>
-                        <span class="text-dark">+54 3544 xxx xxx</span>
-                    </p>
-                    <p>
-                        <i class="bi bi-envelope-fill text-primary me-2"></i>
-                        <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
-                    </p>
+        <!-- Sección Ubicación: -->
+         <section class="container py-5">
+            <h2 class="mb-4 text-secondary fw-bold">Nuestras ubicaciones</h2> <hr>
+            <div class="row g-4">
+                <!-- Nivel inicial y primario -->
+                <div class="col-md-6">
+                    <h4 class="mb-3 text-primary">Nivel Inicial y Primario:</h4>
+                    <div class="ratio ratio-16x9">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2013.023769746026!2d-65.19064070969239!3d-31.94762967026158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942cd548ce1b64a7%3A0x3a5c1ff76a3ba19d!2sInstituto%20Primario%20Juan%20Vicente%20Brizuela!5e0!3m2!1ses-419!2sar!4v1756217329928!5m2!1ses-419!2sar" 
+                            style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
 
-                <!-- Columna 2: Secundario + Superior -->
-                <div class="col-md-3">
-                    <div>
-                    <h4 class="text-primary">Nivel Secundario</h4>
-                    <p class="mb-2">
-                        <i class="bi bi-telephone-fill text-primary me-2"></i>
-                        <span class="text-dark">+54 3544 xxx xxx</span>
-                    </p>
-                    <p class="mb-4">
-                        <i class="bi bi-envelope-fill text-primary me-2"></i>
-                        <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
-                    </p>
-
-                    <h4 class="text-primary">Nivel Superior</h4>
-                    <p class="mb-2">
-                        <i class="bi bi-telephone-fill text-primary me-2"></i>
-                        <span class="text-dark">+54 3544 xxx xxx</span>
-                    </p>
-                    <p>
-                        <i class="bi bi-envelope-fill text-primary me-2"></i>
-                        <a href="mailto:info@ejemplo.com" class="text-dark">info@ejemplo.com</a>
-                    </p>
-                    </div>
-                </div>
-
-                <!-- Columna 3: Mapa -->
-                <div class="col-md-6 d-flex">
-                    <div class="ratio_personal w-100">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.484258403222!2d-65.19087472529915!3d-31.947756822138313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942cd4a0ee28ffdb%3A0x8bd9c0749c304dec!2sItalia%20221%2C%20Villa%20Dolores%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1747949913288!5m2!1ses-419!2sar"
-                        allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                <!-- Nivel secundario y superior -->
+                <div class="col-md-6">
+                    <h4 class="mb-3 text-primary">Nivel Secundario y Superior:</h4>
+                    <div class="ratio ratio-16x9">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2013.023769746026!2d-65.19064070969239!3d-31.94762967026158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942cd35ecae63f71%3A0xdb16e5e3feb4184e!2sInstituto%20Presbitero%20Juan%20Vicente%20Brizuela!5e0!3m2!1ses-419!2sar!4v1756217246735!5m2!1ses-419!2sar" 
+                            style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
 
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 597f06a420b0faf0d601891a2cc113d5d4d1d4c6
 
     </main>
 
     <!-- Estructura del footer -->
     <footer>
-                
-        <div class="icons">
-            <div class="floating-icon">
-                <img src="assets/img/logo diócesis.jpg" alt="Diócesis">
-            </div>
-        </div>
-    </div>
+     
+        <!-- Botón circular con icono, tooltip y aria-label -->
+    <button
+      id="toggle-popup"
+      class="btn-popup"
+      aria-label="Abrir redes sociales"
+      title="Info de contacto"
+    >
+      <i class="fa-regular fa-comments" style="color: #000000;"></i>
+    </button>
+    
     
     <p>Ciclo lectivo 2025 || © Instituto Brizuela </p>
 
-    </footer>
-
+   
+<div id="popup" class="popup" aria-hidden="true">
+    <div class="popup-inner">
+        <button id="close-popup" class="close-btn" aria-label="Cerrar">&times;</button>
+        <div class="popup-content">
+        <p>Contactos <br> Teléfono nivel Incial y Primario: 3544 - 420214 <br>Mail Inicial: brizuelainicial@gmail.com <br>Mail Primario: nivelprimario@institutobrizuela.edu.ar<br>Teléfono nivel Secundario y Superior: 3544 - 420383 <br>Mail Secundario: secretariabrizuela@gmail.com<br>Mail Superior: ifd.institutobrizuela@institutobrizuela.edu.ar</p>
+        
+    </div>
+    </div>
+</div>
+ </footer>
     <!-- Archivos JavaScript -->
     <script src="https://kit.fontawesome.com/84a6577e66.js" crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/img.js"></script>
+    <script src="assets/js/footer.js"> </script>
+    <script src="assets/js/novedades.js"> </script>
 
     <!-- Script de Instagram (necesario para que funcione el embed) -->
     <script async src="//www.instagram.com/embed.js"></script>
