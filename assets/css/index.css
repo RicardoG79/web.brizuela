@@ -190,7 +190,7 @@ main{
 }
 
 
-/*cards novedades opcional*/
+/*cards novedades Instagram*/
 .card_instagram{
   width: 320px;
   height: 340px;
@@ -204,7 +204,7 @@ main{
 
 }
 .tarjetas-instagram-container {
-    margin-bottom: 5rem; /* Ajusta el valor según el espacio que desees */
+    margin-bottom: 5rem; 
 }
 
 .card_instagram::before{
@@ -268,6 +268,8 @@ background: #fff;
 font-size: 2rem;
   color: #002244;
 }
+
+/*FIN cards novedades Instagram*/
 
 
   /* estilo para contacto*/
