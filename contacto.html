@@ -14,6 +14,8 @@
     <!-- Enlace a las hojas de estilo (CSS) -->
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/contacto.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     
 
     <!-- Enlace a fuentes externas (Google Fonts) y boostrap-->
@@ -82,8 +84,8 @@
                 Si tenés alguna consulta, no dudes en contactarnos.
                 Estamos para ayudarte.
             </p>
-            <div class="contacto-grid">
-                <div class="contacto-card">
+            <div class="contacto-grid row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-g-4">
+                <div class="contacto-card col">
                     <h2 class="card-title">Nivel Inicial</h2>
                     <p class="card-info">
                         <i class="fas fa-phone-alt"></i> Teléfono: 3544 xxxxx
@@ -96,7 +98,7 @@
                     </p>
                 </div>
 
-                <div class="contacto-card">
+                <div class="contacto-card col">
                     <h2 class="card-title">Nivel Primario</h2>
                     <p class="card-info">
                         <i class="fas fa-phone-alt"></i> Teléfono: 3544 xxxxx
@@ -109,7 +111,7 @@
                     </p>
                 </div>
 
-                <div class="contacto-card">
+                <div class="contacto-card col">
                     <h2 class="card-title">Nivel Secundario</h2>
                     <p class="card-info">
                         <i class="fas fa-phone-alt"></i> Teléfono: 3544 xxxxx
@@ -122,7 +124,7 @@
                     </p>
                 </div>
 
-                <div class="contacto-card">
+                <div class="contacto-card col">
                     <h2 class="card-title">Nivel Superior</h2>
                     <p class="card-info">
                         <i class="fas fa-phone-alt"></i> Teléfono: 3544 xxxxx
@@ -143,17 +145,31 @@
     
     <!-- Estructura del footer -->
     <footer>
-                
-        <div class="icons">
-            <div class="floating-icon">
-                <img src="assets/img/logo diócesis.jpg" alt="Diócesis">
-            </div>
-        </div>
-    </div>
+     
+        <!-- Botón circular con icono, tooltip y aria-label -->
+    <button
+      id="toggle-popup"
+      class="btn-popup"
+      aria-label="Abrir redes sociales"
+      title="Info de contacto"
+    >
+      <i class="fa-regular fa-comments" style="color: #000000;"></i>
+    </button>
+    
     
     <p>Ciclo lectivo 2025 || © Instituto Brizuela </p>
 
-    </footer>
+   
+<div id="popup" class="popup" aria-hidden="true">
+    <div class="popup-inner">
+        <button id="close-popup" class="close-btn" aria-label="Cerrar">&times;</button>
+        <div class="popup-content">
+        <p>Contactos <br> Teléfono nivel Incial y Primario: 3544 - 420214 <br>Mail Inicial: brizuelainicial@gmail.com <br>Mail Primario: nivelprimario@institutobrizuela.edu.ar<br>Teléfono nivel Secundario y Superior: 3544 - 420383 <br>Mail Secundario: secretariabrizuela@gmail.com<br>Mail Superior: ifd.institutobrizuela@institutobrizuela.edu.ar</p>
+        
+    </div>
+    </div>
+</div>
+ </footer>
 
     <!-- Archivos JavaScript -->
     <script src="https://kit.fontawesome.com/84a6577e66.js" crossorigin="anonymous"></script>
