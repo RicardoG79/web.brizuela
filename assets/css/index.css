@@ -159,32 +159,89 @@ main{
   transform: scale(1.05);
 }
 
-/* Estilo para la seccion novedades: */
-  .insta-card {
-    border: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s;
-  }
-  .insta-card:hover {
-    transform: translateY(-5px);
-  }
-  .insta-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 4px solid #fff;
-    box-shadow: 0 0 0 3px #e1306c;
-  }
-  .insta-btn {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    border: none;
-    color: #fff;
-  }
-  .insta-btn:hover {
-    opacity: 0.9;
-  }
+
+/*cards novedades Instagram*/
+.card_instagram{
+  margin-top: 20px;
+  width:100px;
+  height: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.13);
+
+}
+.tarjetas-instagram-container {
+    margin-bottom: 5rem; 
+}
+
+.card_instagram::before{
+content: "";
+position: absolute;
+top: 2%;
+width: 95%;
+height: 120px;
+z-index: 1;
+border-radius: 10px 10px 0 0;
+background: #007bff;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.13);
+transform-origin: bottom;
+transition: transform 0.4s;
+
+}
+
+.card_instagram:hover::before{
+transform: translateY(-5px) scale(1.05);
+
+}
+
+.card_instagram .img{
+width: 120px;
+height: 120px;
+border-radius: 50%;
+z-index: 10;
+transform: translateY(50px);
+border: 10px solid #ffffff;
+overflow: hidden;
+position: absolute;
+background: #fff;
+}
+
+.card_instagram .img img{
+  width: 120px;
+  height: 120px;
+  transform: translate(-8%, -8%);
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  transform: translateY(160px);
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  align-items: center;
+  container: grid;
+}
+
+
+.content h2{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.list-inline-item{
+font-size: 2rem;
+  color: #002244;
+}
+
+/*FIN cards novedades Instagram*/
+
 
   /* estilo para contacto*/
 .ratio_personal {
