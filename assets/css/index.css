@@ -160,40 +160,11 @@ main{
 }
 
 
-/* Estilo para la seccion novedades: */
-.insta-card {
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  padding: 20px; /* Borde interno más grande */
-  background-color: #fff;
-  overflow: visible; /* Muy importante para que no corte el contenido */
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-/* El contenedor del embed, sin restricciones de tamaño */
-.instagram-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-/* El embed de Instagram se ajusta automáticamente */
-.instagram-wrapper blockquote {
-  width: 100% !important;
-  height: auto !important;
-}
-
-.instagram-wrapper iframe {
-  width: 100% !important;
-  height: auto !important;
-}
-
-
 /*cards novedades Instagram*/
 .card_instagram{
-  width: 320px;
-  height: 340px;
+  margin-top: 20px;
+  width:100px;
+  height: 300px;
   background: #ffffff;
   border-radius: 10px;
   position: relative;
