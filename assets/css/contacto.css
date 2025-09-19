@@ -17,19 +17,12 @@
     text-align: center;
 }
 
-.page-title {
-    font-size: 3.5rem;
-    color: #333;
-    margin-bottom: 10px;
+/* Encabezado*/
+.ideario-header {
+    background-color: #4FC3F7;
 }
 
-.page-description {
-    font-family: cursive;
-    font-size: 1.3rem;
-    color: #666;
-    margin-bottom: 40px;
-}
-
+/* Cards*/
 .contacto-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -38,7 +31,7 @@
 }
 
 .contacto-card {
-    background-color: #fff; /* Fondo de la tarjeta blanco */
+    background-color: #fff; 
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -59,21 +52,23 @@
     border-bottom: 2px solid  #EF8C30;
     padding-bottom: 10px;
 }
-
 .card-info {
-    font-family: 'Open Sans', sans-serif; /* Puedes usar otra fuente si prefieres */
-    font-size: 1rem;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
     color: #555;
     line-height: 1.6;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    word-break: break-all;
 }
 
 .card-info i {
-    color: #366099; /* Color de tus íconos principales */
+    color: #366099;
     margin-right: 15px;
     font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
 /* --- Media Queries para responsividad --- */
