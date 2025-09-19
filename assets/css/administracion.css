@@ -61,7 +61,9 @@
     height: auto; 
     margin-top: 40px;
     border-radius: 10px;
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Estilo para la sección de ayuda/contacto */
@@ -69,6 +71,10 @@
     margin-top: 40px;
     font-size: 0.95rem;
     color: #777;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ayuda-contacto a {
