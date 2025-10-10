@@ -18,12 +18,6 @@ y ponerle nombre general ;)*/
   text-decoration: none;
 }
 
-header {
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: #E1F5FE;
-}
 
 /* Subrayado con acento Usar en cada título para darle a todos el mismo estilo*/
 .titulo-subrayado {

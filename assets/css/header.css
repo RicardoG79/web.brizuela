@@ -7,38 +7,65 @@
 body {
     font-family: Arial, sans-serif;
 }
-main{
-  background: #e6dcf960;
-}
 
 header {
   width: 100%;
   top: 0;
   left: 0;
-  background: #E1F5FE;
+  background-color: #fff;
 }
 
-/* HEADER SUPERIOR */
+/* ================= HEADER SUPERIOR ================= */
 .header_superior {
+  background-color: #fff;
   max-width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 16px 24px;
+  gap: 20px;
 }
 
-.logo img,
-.escudo img {
+/* ================= ESCUDO Y LOGOS ================= */
+.escudo img,
+.logo img {
   width: 100%;
   height: auto;
   max-width: 120px;
+  transition: all 0.3s ease;
 }
 
-.escudo {
-  display: flex;
-  justify-content: flex-end;
+/* Logo general */
+.logo img {
+  max-width: 140px;
 }
+
+/* Por defecto: mostrar logo completo */
+.logo-completo {
+  display: inline-block;
+}
+
+.logo-cuadrado {
+  display: none;
+}
+
+/* ================= NOMBRE INSTITUCIÓN ================= */
+.nombre-institucion {
+  flex: 1;
+  text-align: center;
+}
+
+.nombre-institucion h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  display: inline-block;
+  color: #003366;
+  margin: 0;
+  line-height: 1.3;
+}
+
 
 /* BARRA MENU */
 .container_menu {
@@ -192,38 +219,48 @@ nav ul li ul li a:hover {
 
 /* RESPONSIVE*/
 @media screen and (max-width: 720px) {
-  .menu,
   .header_superior {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .header_superior {
+    background-color: #fff;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-  }
-
-  .logo img {
-    display: block;
-    max-width: 100px;
-    height: 100%;
+    text-align: center;
+    padding: 10px 12px;
+    gap: 10px;
   }
 
   .escudo img {
-    max-width: 100px;
-    height: auto;
+    max-width: 65px;
   }
 
-  .logo {
-    order: 2;
+  .nombre-institucion {
+    margin: 0;
+    flex: unset;
   }
 
-  .escudo {
-    order: 1;
+  .nombre-completo {
+    display: inline-block !important;
+    font-size: 0.95rem !important;
+    font-weight: 600;
+    color: #003366;
+    padding: 2px 6px;
+    border-radius: 8px;
   }
 
+
+  .logo-completo {
+    display: none !important;
+  }
+
+  .logo-cuadrado {
+    display: inline-block !important;
+    max-width: 65px !important;
+  }
+
+  .menu {
+    max-width: 100%;
+    margin: 0;
+  }
   .container_menu {
     height: 50px;
     background: #0288D1;
