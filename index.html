@@ -7,6 +7,10 @@
     <meta name="keywords" content="Palabras clave, SEO">
     <meta name="author" content="Tu nombre o compañía">
     <meta name="viewport" content="width=device-width">
+
+    <!-- Animaciones con AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/67f433d821.js" crossorigin="anonymous"></script>
     <!-- Título de la página -->
     <title>Instituto Brizuela</title>
@@ -132,7 +136,7 @@
          <!-- Cards de cada nivel-->
         <div class="container my-5">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 align-items-center justify-content-center text-center">
-                <div class="col">
+                <div class="col" data-aos="fade-up">
                     <div class="card h-100">
                         <img src="./assets/img/nivel-inicial/jardin01.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -142,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-down">
                     <div class="card h-100">
                         <img src="./assets/img/nivel-primario/primario03.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -152,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-up">
                     <div class="card h-100">
                         <img src="./assets/img/nivel-secundario/secundario03.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -162,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-down">
                     <div class="card h-100">
                         <img src="./assets/img/Secundario.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -175,7 +179,7 @@
             </div>
         </div>
 <!-- Sección para el carrusel de novedades:-->
- <section class="news-coverflow">
+ <section class="news-coverflow" data-aos="flip-left">
     <h2 class="nc-title">Novedades</h2>
     <h5 class="nc-title">Compartimos la vida en comunidad.</h5>
 
@@ -228,7 +232,7 @@
   </section>
 
         <!-- Sección para |novedades | archivos importantes, matriculación, mesas de exámenes|-->
-        <section class="py-5 text-white" style="background-color: #0288D1;">
+        <section class="py-5 text-white" style="background-color: #0288D1;" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-4">TODO PARA LA MATRICULACIÓN</h2>
                 <h4>Archivos descargables por nivel:</h4>
@@ -306,7 +310,7 @@
 <!--Cards novedades redes sociales-->
 </section>
 
-<section class="text-center py-5 bg-light">
+<section class="text-center py-5 bg-light" data-aos="zoom-out-up">
     <h2 class="mb-4 text-secondary fw-bold">Nuestras redes sociales</h2>
 
     
@@ -400,6 +404,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
-
+    <!--Script animaciones AOS-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+     AOS.init({
+        duration: 1000, // duración de animación en ms
+        once: true, // se anima una sola vez
+        offset: 100 // distancia antes de activarse
+    });
+</script>
 </body>
 </html>
