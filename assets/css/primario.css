@@ -1,0 +1,11 @@
+.niveles-header {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/assets/img/nivel-primario/primario02.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px; /* espacio interior */
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}

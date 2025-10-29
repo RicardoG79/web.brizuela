@@ -1,0 +1,11 @@
+.niveles-header {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/assets/img/nivel-inicial/fondo_inicial.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px; /* espacio interior */
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
