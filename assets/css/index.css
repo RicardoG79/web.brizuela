@@ -186,7 +186,7 @@ width: 95%;
 height: 120px;
 z-index: 1;
 border-radius: 10px 10px 0 0;
-background: #007bff;
+background: linear-gradient(to right, #02293f, #046b9b, #02293f);
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.13);
 transform-origin: bottom;
 transition: transform 0.4s;
