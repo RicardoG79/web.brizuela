@@ -13,9 +13,6 @@
   text-decoration: none;
 }
 
-
-
-
 html, body {
 	background:#ffffff;
 	height: 100%;
@@ -71,6 +68,35 @@ main{
   padding: 0.22rem;
   border-radius: 1.5%;
 }
+
+/* Portadas generales de contacto, pastoral y admin código reutilizable*/
+.portada {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/img/Ntra Sra de los Dolores.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  /* 🔥 Animación */
+  animation: moverFondo 18s ease-in-out infinite alternate;
+}
+
+@keyframes moverFondo {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: center 20px; /* hacia abajo */
+  }
+  100% {
+    background-position: center -20px; /* hacia arriba */
+  }
+}
+
 
 /* Para pantallas pequeñas */
 @media (max-width: 768px) {
