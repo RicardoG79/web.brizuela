@@ -186,6 +186,44 @@ main{
 }
 
 
+/* Clase base para todos los botones de las cards */
+/* --- BASE: mantiene estilo Bootstrap pero le da prioridad a los colores si no no se aplican los cambios --- */
+.boton-nivel {
+  color: #fff !important;
+  border: none !important;
+  padding: 0.5rem 1rem !important; /* mismo tamaño que .btn */
+  border-radius: 0.375rem !important; /* equivalente a btn */
+  display: inline-block;
+  transition: 
+    background-color 0.3s ease,
+    transform 0.25s ease;
+}
+
+/* --- ZOOM --- */
+.boton-nivel:hover {
+  transform: scale(1.05);
+}
+
+/* --- COLORES PERSONALIZADOS + HOVER OSCURO --- */
+
+/* Inicial */
+.boton-inicial { background-color: #0e2267 !important; }
+.boton-inicial:hover { background-color: #0b1c52 !important; }
+
+/* Primario */
+.boton-primario { background-color: #004660 !important; }
+.boton-primario:hover { background-color: #003447 !important; }
+
+/* Secundario */
+.boton-secundario { background-color: #7fad06 !important; }
+.boton-secundario:hover { background-color: #6c8e05 !important; }
+
+/* Superior */
+.boton-superior{ background-color: #0e5708 !important; }
+.boton-superior:hover{ background-color: #0a4206 !important; }
+
+
+
 /*cards novedades Instagram*/
 .card_instagram{
   margin-top: 20px;
@@ -257,7 +295,6 @@ background: #fff;
 .content h2{
   font-size: 1.2rem;
   font-weight: 600;
-  color: #333;
   text-align: center;
 }
 
