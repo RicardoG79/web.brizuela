@@ -27,6 +27,8 @@
 <link href="https://fonts.bunny.net/css?family=akaya-telivigala:400|alkatra:400" rel="stylesheet" />
     <!-- Enlace a iconos de font -->
 
+    <!-- Animaciones con AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- Favicon (icono del sitio) -->
     <link rel="icon" href="assets/img/logo1.ico" type="image/x-icon">
@@ -86,7 +88,7 @@
 	</header>
     <main>
         <!-- Titulo del nivel (usar en todas las páginas)-->
-        <div class="niveles-header text-center text-white animate__animated animate__fadeIn" style="background-color: #4FC3F7;">
+        <div class="niveles-header text-center text-white animate__animated animate__fadeIn" data-aos="flip-up" style="background-color: #4FC3F7;">
             <div class="py-5">
                 <h1 class="fw-bold">NIVEL SECUNDARIO</h1>
                 <!-- En el texto de abajo  se usó la de la card de index, se puede cambiar-->
@@ -97,7 +99,7 @@
             <div class="row g-4">
                 <!-- Columna izquierda: Texto principal -->
             <div class="col-lg-8">
-                <h3 class="mt-4 text-secondary fw-semibold titulo-subrayado">Nivel Secundario</h3>
+                <h3 class="mt-4 text-secondary fw-semibold titulo-subrayado" data-aos="fade-right">Nivel Secundario</h3>
                 <p>
                     En el nivel secundario acompañamos a los adolescentes en una etapa clave de su vida, en la que
                     consolidan aprendizajes, fortalecen su identidad personal y se preparan para enfrentar los desafíos
@@ -109,7 +111,7 @@
                     con seguridad en distintos ámbitos de la sociedad.
                 </p>
 
-                <h3 class="mt-4 text-secondary fw-semibold titulo-subrayado">Orientación en Economía y Administración</h3>
+                <h3 class="mt-4 text-secondary fw-semibold titulo-subrayado" data-aos="fade-right">Orientación en Economía y Administración</h3>
                 <p>
                     La orientación en <strong>Economía y Administración</strong> permite que los estudiantes se apropien de saberes
                     y herramientas para comprender y participar activamente en los procesos económicos y organizacionales 
@@ -119,27 +121,27 @@
                     A través de esta formación, los adolescentes podrán:
                 </p>
                 <ul>
-                    <li>Interpretar y analizar fenómenos económicos desde la realidad local hasta el contexto global.</li>
-                    <li>Comprender cómo funcionan las organizaciones: su estructura, dinámica y función social.</li>
-                    <li>Desarrollar capacidades de planificación, organización, dirección y control en proyectos y actividades.</li>
-                    <li>Manejar sistemas de información y el Sistema Contable como herramientas para la toma de decisiones.</li>
-                    <li>Conocer el marco jurídico que regula las organizaciones, sus derechos y obligaciones.</li>
-                    <li>Diseñar y gestionar emprendimientos, simulaciones y prácticas educativas aplicadas.</li>
-                    <li>Integrar nuevas tecnologías a los procesos de administración y gestión.</li>
+                    <li data-aos="zoom-in">Interpretar y analizar fenómenos económicos desde la realidad local hasta el contexto global.</li>
+                    <li data-aos="zoom-in">Comprender cómo funcionan las organizaciones: su estructura, dinámica y función social.</li>
+                    <li data-aos="zoom-in">Desarrollar capacidades de planificación, organización, dirección y control en proyectos y actividades.</li>
+                    <li data-aos="zoom-in">Manejar sistemas de información y el Sistema Contable como herramientas para la toma de decisiones.</li>
+                    <li data-aos="zoom-in">Conocer el marco jurídico que regula las organizaciones, sus derechos y obligaciones.</li>
+                    <li data-aos="zoom-in">Diseñar y gestionar emprendimientos, simulaciones y prácticas educativas aplicadas.</li>
+                    <li data-aos="zoom-in">Integrar nuevas tecnologías a los procesos de administración y gestión.</li>
                 </ul>
 
-                <h3 class="mt-4 text-secondary fw-semibold titulo-subrayado">Finalidad</h3>
+                <h3 class="mt-4 text-secondary fw-semibold titulo-subrayado" data-aos="fade-right">Finalidad</h3>
                 <p>
                     Todo este recorrido tiene como objetivo acercar a los estudiantes a la <strong>interpretación de la realidad 
                     socioeconómica</strong>, contribuyendo a su desarrollo como ciudadanos comprometidos, facilitando su inclusión 
                     en el mundo laboral y acompañándolos en la elección vocacional y la preparación para estudios superiores.
                 </p>
 
-                <h3 class="mt-4 text-secondary fw-semibold titulo-subrayado">Equipo Directivo</h3>
+                <h3 class="mt-4 text-secondary fw-semibold titulo-subrayado" data-aos="fade-right">Equipo Directivo</h3>
                 <ul>
-                    <li>Directora: Prof. Patricia Oyola</li>
-                    <li>Vice Directora: Prof. Natalia Flores</li>
-                    <li>Secretaria: Prof. Ana Olmedo</li>
+                    <li data-aos="zoom-in">Directora: Prof. Patricia Oyola</li>
+                    <li data-aos="zoom-in">Vice Directora: Prof. Natalia Flores</li>
+                    <li data-aos="zoom-in">Secretaria: Prof. Ana Olmedo</li>
                     
                 </ul>
             </div>
@@ -147,7 +149,7 @@
 
                 <!-- Columna derecha: Imagen con pie de imagen -->
                 <div class="col-lg-4">
-                    <figure class="text-center">
+                    <figure class="text-center" data-aos="zoom-in">
                         <img src="assets/img/nivel-secundario/secundario09.jpg" alt="Niños en el jardín" class="img-fluid rounded shadow">
                         <figcaption class="mt-2 text-muted fst-italic small">
                         Nivel Secundario · Colegio Brizuela <br>
@@ -200,6 +202,16 @@
     <script src="https://kit.fontawesome.com/84a6577e66.js" crossorigin="anonymous"></script>
     
     <script src="assets/js/capsula_footer.js"></script>
+
+       <!--Script animaciones AOS-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+     AOS.init({
+        duration: 1000, // duración de animación en ms
+        once: true, // se anima una sola vez
+        offset: 100 // distancia antes de activarse
+    	});
+    </script>
 
   </body>
 </html>

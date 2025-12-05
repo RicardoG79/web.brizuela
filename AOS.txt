@@ -1,0 +1,27 @@
+En el pie con los script:
+
+    <!--Script animaciones AOS-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+     AOS.init({
+        duration: 1000, // duración de animación en ms
+        once: true, // se anima una sola vez
+        offset: 100 // distancia antes de activarse
+    	});
+     </script>
+
+
+En el Head;
+
+<!-- Animaciones con AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+data-aos="zoom-in"    Para las listas
+
+data-aos="fade-right"   Para los títulos de los párrafos o listas
+
+data-aos="flip-up"    Para portadas 
+
+
+Para más: https://michalsnik.github.io/aos/ 
