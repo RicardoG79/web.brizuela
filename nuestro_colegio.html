@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/nuestro_colegio.css">
     
+    <!-- Animaciones con AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
     <!-- Enlace a fuentes externas (Google Fonts) y boostrap-->
 
@@ -130,7 +133,7 @@
       <div class="container">
         <div class="row py-5 align-items-center">
           <div class="col-md-8">
-            <h2 class="mt-4 text-secondary fw-semibold titulo-subrayado">El por qué del nombre</h2>
+            <h2 class="mt-4 text-secondary fw-semibold titulo-subrayado" data-aos="fade-right">El por qué del nombre</h2>
             <p>
             El Padre Juan Vicente Brizuela, riojano por nacimiento, fue designado como Cura párroco y 
             Vicario interino del Curato de San Javier, en el año 1851. Desde entonces fue un infatigable 
@@ -152,7 +155,7 @@
               del Reino y lucharan por él.</p>              
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="zoom-in">
             <div class="shadow-lg rounded overflow-hidden">
                 <img src="./assets/img/Instituto-Brizuela.png" class="img-fluid" alt="Nuestro colegio">
             </div>
@@ -165,11 +168,11 @@
     <!-- LINK DE RESPALDO: https://www.youtube.com/watch?v=t5AE66WgQD0&ab_channel=GreatStack -->
 
     <div class="container">
-      <h2 class="text-secondary fw-semibold titulo-subrayado">Nuestra Historia</h2>
+      <h2 class="text-secondary fw-semibold titulo-subrayado" data-aos="fade-right">Nuestra Historia</h2>
       <div class="timeline">
         <div class="timeline-container left-container">
           <img src="assets/img/nuestro_colegio/linea-tiempo.jpg">
-          <div class="timeline-text-box">
+          <div class="timeline-text-box" data-aos="flip-up">
             <h2>1958</h2>
             <p>El padre Horacio Gómez Davila, y un grupo de vecinos generosos, dan comienzo a una gran obra de la Iglesia: un colegio parroquial.</p>
             <span class="left-container-arrow"></span>
@@ -178,7 +181,7 @@
 
         <div class="timeline-container right-container">
           <img src="assets/img/nuestro_colegio/linea-tiempo.jpg">
-          <div class="timeline-text-box">
+          <div class="timeline-text-box" data-aos="flip-up">
             <h2>1961</h2>
             <p>Egresa la primera promoción de bachilleres</p>
             <span class="right-container-arrow"></span>
@@ -187,7 +190,7 @@
 
         <div class="timeline-container left-container">
           <img src="assets/img/nuestro_colegio/linea-tiempo.jpg">
-          <div class="timeline-text-box">
+          <div class="timeline-text-box" data-aos="flip-up">
             <h2>1967</h2>
             <p>El Instituto comienza a funcionar de manera mixta.</p>
             <span class="left-container-arrow"></span>
@@ -196,7 +199,7 @@
 
         <div class="timeline-container right-container">
           <img src="assets/img/nuestro_colegio/linea-tiempo.jpg">
-          <div class="timeline-text-box">
+          <div class="timeline-text-box" data-aos="flip-up">
             <h2>1977</h2>
             <p>Comienza a funcionar el nivel terciario, actualmente nivel Superior.</p>
             <span class="right-container-arrow"></span>
@@ -210,7 +213,7 @@
 
         <div class="timeline-container left-container">
           <img src="assets/img/nuestro_colegio/linea-tiempo.jpg">
-          <div class="timeline-text-box">
+          <div class="timeline-text-box" data-aos="flip-up">
             <h2>1985</h2>
             <p>El nivel Primario traslada sus instalaciones a Italia 251, en la ubicación actual.</p>
             <span class="left-container-arrow"></span>
@@ -243,6 +246,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-qB9hXScN+ZBz9XbW9GHMHL2c5Zlq0EfjWk7Vm7K46D3xY7aSGV3wA92m7YY04h8g" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-     
+       <!--Script animaciones AOS-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+     AOS.init({
+        duration: 1000, // duración de animación en ms
+        once: true, // se anima una sola vez
+        offset: 100 // distancia antes de activarse
+    	});
+    </script>
+
 </body>
 </html>
