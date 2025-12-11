@@ -1,7 +1,7 @@
 .niveles-header {
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/assets/img/nivel-superior/profesorados-juntos.webp');
+    linear-gradient(rgba(0, 0, 0, 0.656), rgba(0, 0, 0, 0.585)),
+    url('/assets/img/nivel-superior/nivelSuperior2025-01.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,3 +9,9 @@
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
+
+.card-profesorados {
+  background: linear-gradient(to right, #02293f, #046b9b, #02293f);
+  color: #fff;
+}
+
