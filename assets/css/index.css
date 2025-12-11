@@ -48,6 +48,24 @@ main{
     position: relative;
     z-index: 2; /* Asegura que el contenido esté encima de la superposición */
 }
+
+/* Subrayado con acento Usar en cada título para darle a todos el mismo estilo*/
+.titulo-subrayado {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 40px;
+}
+.titulo-subrayado::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background-color: #EF8C30;
+    border-radius: 2px;
+}
+
 .content {
     padding: 10px;
 }
