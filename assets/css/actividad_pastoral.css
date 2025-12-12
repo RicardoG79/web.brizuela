@@ -51,7 +51,7 @@ img {
 
 /* Pastoral: */
 .seccion-pastoral {
-  background-color: var(--azul-oscuro);
+  background: linear-gradient(to right, #02293f, #046b9b, #02293f);
   padding: 2rem 0;
 }
 
@@ -88,12 +88,11 @@ img {
 
 /* ESTILOS NOTICIAS DE LA DIÓCESIS */
 .noticias-diocesanas {
-  background: linear-gradient(135deg, #002244, #004488); /* azul degradé */
   color: #fff;
 }
 
 .banner-noticias {
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to right, #02293f, #046b9b, #02293f);
   border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(6px);
   color: #fff;
