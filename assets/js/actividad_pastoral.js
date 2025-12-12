@@ -67,7 +67,7 @@ actividadesPastorales.forEach((actividad, index) => {
             <div class="col-md-6 d-flex flex-column justify-content-center p-3">
               <h5 class="fw-bold pb-3">${actividad.titulo}</h5>
               <p class="fw-normal">${actividad.descripcion}</p>
-              <button class="btn btn-acento mt-auto" data-bs-toggle="modal" data-bs-target="#modal${actividad.id}">
+              <button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modal${actividad.id}">
                 Ver más
               </button>
             </div>
