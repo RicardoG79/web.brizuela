@@ -62,9 +62,9 @@ actividadesPastorales.forEach((actividad, index) => {
         <div class="card pastoral-card shadow">
           <div class="row g-0">
             <div class="col-md-6">
-              <img src="${actividad.imagen}" class="img-fluid rounded-start" alt="${actividad.titulo}">
+              <img src="${actividad.imagen}" class="d-block w-100 pastoral-img" alt="${actividad.titulo}">
             </div>
-            <div class="col-md-6 d-flex flex-column justify-content-center p-3">
+            <div class="col-md-6 d-flex flex-column justify-content-center p-3 my-4">
               <h5 class="fw-bold pb-3">${actividad.titulo}</h5>
               <p class="fw-normal">${actividad.descripcion}</p>
               <button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modal${actividad.id}">
@@ -84,7 +84,7 @@ actividadesPastorales.forEach((actividad, index) => {
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">${actividad.titulo}</h5>
+            <h5 class="modal-title text-primary fw-bold">${actividad.titulo}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body modal-scroll">
