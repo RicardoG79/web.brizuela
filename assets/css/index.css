@@ -17,6 +17,7 @@ html, body {
 	background:#ffffff;
 	height: 100%;
 	margin: 0;
+  padding: 0;
 	}
   
 main{
@@ -305,6 +306,9 @@ background: #fff;
 font-size: 2rem;
   color: #002244;
 }
+
+
+
 
 /*FIN cards novedades Instagram*/
 
