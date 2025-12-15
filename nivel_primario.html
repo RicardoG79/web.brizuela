@@ -209,6 +209,16 @@
     	});
     </script>
 
+    <!--Para que AOS no se inicialice en pantallas menores a 768px-->
+<script>
+  AOS.init({
+    disable: function () {
+      return window.innerWidth < 768;
+    }
+  });
+</script>
+
+
     <script src="assets/js/capsula_footer.js"></script>
 
   </body>
