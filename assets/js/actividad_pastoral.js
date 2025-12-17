@@ -1,13 +1,13 @@
 const actividadesPastorales = [
   {
     id: 1,
-    titulo: "Misa de inicio de clases",
-    descripcion: "Celebramos juntos el comienzo del ciclo lectivo con una misa comunitaria...",
-    imagen: "assets/img/nivel-primario/primario04.jpg",
+    titulo: "Misa de fin de ciclo  para 6º grado",
+    descripcion: "Celebramos juntos fin de un ciclo lectivo, con una celebración comunitaria...",
+    imagen: "assets/img/actividad-pastoral/Misa-fin-ciclo.jpeg",
     detalle: `
-      Iniciamos el año escolar con una misa presidida por el párroco local, en la que participaron alumnos, docentes y familias.  
-      Fue un momento de oración y reflexión para poner en manos de Dios los desafíos del ciclo lectivo.  
-      Los estudiantes de nivel secundario colaboraron con las lecturas y el coro, generando un clima de comunidad y alegría.
+      Los egresados de nivel primario finalizaron su cursada con una celebración presidida por nuestro capellán, P. Alex MArtínez, en la que participaron estudiantes, docentes y familias.  
+      Fue un momento de oración y reflexión para poner en manos de Dios el tiempo vivido.  
+      
     `
   },
   {
