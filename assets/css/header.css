@@ -16,55 +16,51 @@ header {
 }
 
 /* ================= HEADER SUPERIOR ================= */
-.header_superior {
-  background-color: #fff;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 24px;
-  gap: 20px;
+/* Logo del colegio (izquierda) */
+.logo-institucional img {
+  max-height: 90px; /* Limita la altura del logo */
+  object-fit: contain; /* Asegura que no se distorsione */
 }
 
-/* ================= ESCUDO Y LOGOS ================= */
-.escudo img,
-.logo img {
-  width: 100%;
-  height: auto;
-  max-width: 120px;
-  transition: all 0.3s ease;
+/* Logo de la Diócesis (derecha) */
+.logo-diocesis img {
+  max-height: 70px; /* Tamaño del logo en pantallas grandes */
+  object-fit: contain; /* Mantiene la proporción */
 }
 
-/* Logo general */
-.logo img {
-  max-width: 140px;
-}
-
-/* Por defecto: mostrar logo completo */
+/* Logo cuadrado de la diócesis en pantallas pequeñas */
 .logo-completo {
-  display: inline-block;
+  display: block;
 }
 
 .logo-cuadrado {
-  display: none;
+  display: none; /* ocultamos en pantallas grandes */
 }
 
-/* ================= NOMBRE INSTITUCIÓN ================= */
-.nombre-institucion {
-  flex: 1;
-  text-align: center;
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    justify-content: center; /* Centra los logos en pantallas pequeñas */
+  }
+  
+  .logo-institucional,
+  .logo-diocesis {
+    max-width: 150px; /* Limita el tamaño de los logos en móvil */
+  }
+
+  .logo-diocesis img {
+    max-width: 110%; /* Hace que el logo de la Diócesis sea más grande */
+  }
+
+  .logo-completo{
+    display: none;
+  }
+  
+  .logo-cuadrado{
+    display: block;
+  }
 }
 
-.nombre-institucion h1 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  padding: 6px 12px;
-  display: inline-block;
-  color: #003366;
-  margin: 0;
-  line-height: 1.3;
-}
 
 
 /* BARRA MENU */
