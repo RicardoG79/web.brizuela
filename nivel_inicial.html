@@ -357,6 +357,16 @@
         offset: 100 // distancia antes de activarse
         });
     </script>
+
+    <!--Para que AOS no se inicialice en pantallas menores a 768px-->
+<script>
+  AOS.init({
+    disable: function () {
+      return window.innerWidth < 768;
+    }
+  });
+</script>
+
 </body>
 
 

@@ -80,6 +80,15 @@ header {
   justify-content: space-between;
 }
 
+@media (max-width: 480px){
+  .menu {
+  margin: auto;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+}
+
 nav {
   height: 100%;
 }
