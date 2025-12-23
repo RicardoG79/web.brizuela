@@ -1,439 +1,464 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Breve descripción de tu página">
-    <meta name="keywords" content="Palabras clave, SEO">
-    <meta name="author" content="Tu nombre o compañía">
-    <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Breve descripción de tu página">
+  <meta name="keywords" content="Palabras clave, SEO">
+  <meta name="author" content="Tu nombre o compañía">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Animaciones con AOS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Animaciones con AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/67f433d821.js" crossorigin="anonymous"></script>
-    <!-- Título de la página -->
-    <title>Instituto Brizuela</title>
+  <script src="https://kit.fontawesome.com/67f433d821.js" crossorigin="anonymous"></script>
+  <!-- Título de la página -->
+  <title>Instituto Brizuela</title>
 
-    <!-- Enlace a las hojas de estilo (CSS) -->
-    <link rel="stylesheet" href="assets/css/index.css">
-    
-
-    <!-- Enlace a fuentes externas (Google Fonts) y boostrap-->
-
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=akaya-telivigala:400|alkatra:400" rel="stylesheet" />
-    <!-- Enlace a iconos de font -->
+  <!-- Enlace a las hojas de estilo (CSS) -->
+  <link rel="stylesheet" href="assets/css/index.css">
 
 
-    <!-- Favicon (icono del sitio) -->
-    <link rel="icon" href="assets/img/logo1.ico" type="image/x-icon">
+  <!-- Enlace a fuentes externas (Google Fonts) y boostrap-->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:wght@100..400&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=akaya-telivigala:400|alkatra:400" rel="stylesheet" />
+  <!-- Enlace a iconos de font -->
+
+
+  <!-- Favicon (icono del sitio) -->
+  <link rel="icon" href="assets/img/logo1.ico" type="image/x-icon">
 </head>
+
 <body>
-    <!-- Código de header -->
-    <header>
+  <!-- Código de header -->
+  <header>
 
-        <section class="py-1">
-            <div class="container d-flex justify-content-between align-items-center">
-                
-                <!-- Logo Institucional (izquierda) -->
-                <div class="logo-institucional">
-                <img src="/assets/img/logo_nuevo_calidadMedia.jpg" alt="Escudo del instituto" class="img-fluid">
-                </div>
+    <section class="py-1">
+      <div class="container d-flex justify-content-between align-items-center">
 
-                <!-- Logo Diócesis (derecha) -->
-                <div class="logo-diocesis text-end">
-                <img src="/assets/img/Diocesis.png" alt="Diócesis de Cruz del Eje" class="logo-completo img-fluid">
-                <img src="/assets/img/Logotipo-diocesis-cuadrado.png" alt="Diócesis de Cruz del Eje (versión cuadrada)" class="logo-cuadrado img-fluid">
-                </div>
-
-            </div>
-        </section>
-
-        <section class="container_menu">
-            <div class="menu">
-                <input type="checkbox" id="check_menu">
-                <label id="label_check" for="check_menu">
-                    <i class="fa-solid fa-bars icon_menu"></i>
-                </label>
-                 <nav>
-                <ul>
-                    <li><a href="/index.html" id="selected"></a></li>
-                    <li><a href="/nuestro_colegio.html">Nuestro Colegio</a></li>
-                    <li><a href="#">Propuesta Educativa</a>
-                    <ul>
-                        <li><a href="/nivel_inicial.html">Nivel Inicial</a></li>
-                        <li><a href="/nivel_primario.html">Nivel Primario</a></li>
-                        <li><a href="/nivel_secundario.html">Nivel Secundario</a></li>
-                        <li><a href="/nivel_superior.html">Nivel Superior</a></li>
-                    </ul>
-                    
-                    </li>
-                    <li><a href="/actividad_pastoral.html">Actividad Pastoral</a></li>
-                    <li><a href="/administración.html">Administración</a></li>
-                    <li><a href="/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-
-            </div>
-           
-        </section>
-        
-	
-	</header>
-
-    <!-- Sección principal -->
-    <main>
-       <div id="carouselExampleIndicators" class="carousel slide carousel-fixed-height" data-bs-ride="carousel" data-aos="flip-up">
-            <!-- Indicadores -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                
-            </div>
-
-            <!-- Imágenes -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="/assets/img/carrusel/primario02.jpg" class="d-block w-100" alt="Estudiantes 1">
-                </div>
-                <div class="carousel-item">
-                <img src="/assets/img/carrusel/secundario03.jpg" class="d-block w-100" alt="Estudiantes 2">
-                </div>
-                <div class="carousel-item">
-                <img src="/assets/img/carrusel/inicial01.jpeg" class="d-block w-100" alt="Estudiantes 3">
-                </div>
-                <div class="carousel-item">
-                <img src="/assets/img/carrusel/Profesorado I.jpeg" class="d-block w-100" alt="Estudiantes 4">
-                </div>
-               
-            </div>
-
-            <!-- Controles -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
+        <!-- Logo Institucional (izquierda) -->
+        <div class="logo-institucional">
+          <img src="/assets/img/logo_nuevo_calidadMedia.jpg" alt="Escudo del instituto" class="img-fluid">
         </div>
 
-
-
-          <!-- Pre contenido principal -->
-        <div >
-            <h4 class="des">"Cuando se anunció la puesta en marcha de la Institución, el Padre Gómez Dávila decidió hacer funcionar el Colegio en dependencias de la casa parroquial. Sólo contó con dos elementos: el elemento humano, y una fe inmensa en Dios y la Virgen Dolorosa” (testimonio sobre la fundación del Brizuela).
-            </h4>            
+        <!-- Logo Diócesis (derecha) -->
+        <div class="logo-diocesis text-end">
+          <img src="/assets/img/Diocesis.png" alt="Diócesis de Cruz del Eje" class="logo-completo img-fluid">
+          <img src="/assets/img/Logotipo-diocesis-cuadrado.png" alt="Diócesis de Cruz del Eje (versión cuadrada)"
+            class="logo-cuadrado img-fluid">
         </div>
-        <!-- Contenido principal-->
-         <!-- Cards de cada nivel-->
-        <div class="container my-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 align-items-center justify-content-center text-center">
-                <div class="col" data-aos="fade-up">
-                    <div class="card h-100">
-                        <img src="./assets/img/nivel-inicial/jardin01.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">NIVEL INICIAL</h5>
-                        <p class="card-text">El nivel Inicial introduce al maravilloso mundo de la educación.</p>
-                        <a href="./nivel_inicial.html" class="btn boton-inicial boton-nivel">Ingresar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col" data-aos="fade-down">
-                    <div class="card h-100">
-                        <img src="./assets/img/nivel-primario/primario03.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">NIVEL PRIMARIO</h5>
-                        <p class="card-text">El nivel Primario fortalece el camino de la educación, y el encuentro.</p>
-                        <a href="./nivel_primario.html" class="btn boton-primario boton-nivel">Ingresar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col" data-aos="fade-up">
-                    <div class="card h-100">
-                        <img src="./assets/img/nivel-secundario/secundario03.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">NIVEL SECUNDARIO</h5>
-                        <p class="card-text">El nivel Secundario acompaña a los estudiantes en su formación integral.</p>
-                        <a href="./nivel_secundario.html" class="btn boton-secundario boton-nivel">Ingresar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col" data-aos="fade-down">
-                    <div class="card h-100">
-                        <img src="./assets/img/Secundario.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">NIVEL SUPERIOR</h5>
-                        <p class="card-text">El nivel Superior prepara a los jóvenes en una formación profesional, y humana.</p>
-                        <a href="./nivel_superior.html" class="btn boton-superior boton-nivel">Ingresar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!-- Sección para el carrusel de novedades:-->
- <section class="news-coverflow" data-aos="flip-left">
-    <h2 class="nc-title">Novedades</h2>
-    <h5 class="nc-title">Compartimos la vida en comunidad.</h5>
 
-    <div class="nc-viewport">
-      <button class="nc-btn nc-btn--prev" data-prev aria-label="Anterior">&#10094;</button>
+      </div>
+    </section>
 
-      <div class="nc-track">
-        <article class="nc-slide">
-          <div class="nc-media">
-            <img src="assets/img/nivel-inicial/jardin01.jpg" alt="Noticia 1" />
-          </div>
-         
-          <p class="nc-desc">Empezamos con las inscripciones <br> para los más pequeños.</p>
-        </article>
+    <section class="container_menu">
+      <div class="menu">
+        <input type="checkbox" id="check_menu">
+        <label id="label_check" for="check_menu">
+          <i class="fa-solid fa-bars icon_menu"></i>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="/index.html" id="selected"></a></li>
+            <li><a href="/nuestro_colegio.html">Nuestro Colegio</a></li>
+            <li><a href="#">Propuesta Educativa</a>
+              <ul>
+                <li><a href="/nivel_inicial.html">Nivel Inicial</a></li>
+                <li><a href="/nivel_primario.html">Nivel Primario</a></li>
+                <li><a href="/nivel_secundario.html">Nivel Secundario</a></li>
+                <li><a href="/nivel_superior.html">Nivel Superior</a></li>
+              </ul>
 
-        <article class="nc-slide">
-          <div class="nc-media">
-            <img src="assets/img/nivel-primario/primario01.jpg" alt="Noticia 2" />
-          </div>
-          
-          <p class="nc-desc">Acto de fin de ciclo, nivel Primario.</p>
-        </article>
+            </li>
+            <li><a href="/actividad_pastoral.html">Actividad Pastoral</a></li>
+            <li><a href="/administración.html">Administración</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
 
-        <article class="nc-slide">
-          <div class="nc-media">
-            <img src="assets/img/nivel-secundario/Egresados secundario 2025.jpeg" alt="Noticia 3" />
-          </div>
-          
-          <p class="nc-desc">Egresados Nivel Secundario, <br>promoción 2025.</p>
-        </article>
-
-        <article class="nc-slide">
-          <div class="nc-media">
-            <img src="assets/img/nivel-superior/Egresados TP 25.png" alt="Noticia 4" />
-          </div>
-          
-          <p class="nc-desc">Egresados 2025, <br> Trayecto Pedagógico para Graduados no Docentes.</p>
-        </article>
-    <article class="nc-slide">
-          <div class="nc-media">
-            <img src="assets/img/Ntra Sra de los Dolores.jpeg" alt="Noticia 5" />
-          </div>
-          
-          <p class="nc-desc">Nuestra Madre nos bendice.</p>
-        </article>
       </div>
 
-      <button class="nc-btn nc-btn--next" data-next aria-label="Siguiente">&#10095;</button>
+    </section>
+
+
+  </header>
+
+  <!-- Sección principal -->
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fixed-height" data-bs-ride="carousel"
+      data-aos="flip-up">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+
+      </div>
+
+      <!-- Imágenes -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/img/carrusel/primario02.jpg" class="d-block w-100" alt="Estudiantes 1">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/carrusel/secundario03.jpg" class="d-block w-100" alt="Estudiantes 2">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/carrusel/inicial01.jpeg" class="d-block w-100" alt="Estudiantes 3">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/carrusel/Profesorado I.jpeg" class="d-block w-100" alt="Estudiantes 4">
+        </div>
+
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
-  </section>
-
-        <!-- Sección para |novedades | archivos importantes, matriculación, mesas de exámenes|-->
-        <section class="py-5 text-white" style="background: linear-gradient(to right, #02293f, #046b9b, #02293f);" data-aos="fade-up">
-            <div class="container">
-                <h2 class="text-center mb-4">REQUISITOS PARA LA MATRICULACIÓN</h2>
-                <h4>Requerimientos para cada nivel:</h4>
-                <div class="accordion" id="matriculaAccordion">
-
-                    <!-- Ítem 1: Documentación nivel inicial-->
-                    <div class="accordion-item bg-transparent border-bottom border-white">
-                        <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                            Documentación para Nivel Inicial
-                        </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#matriculaAccordion">
-                        <div class="accordion-body text-white">
-                            Acceso a: CUS - ISA - Contrato de Servicio Educativo - Solicitud de vacante.  
-                            <br>
-                            <a href="./archivos_inicial.html" class="btn btn-light mt-2" target="_blank" >Ingresar</a>
-                        </div>
-                        </div>
-                    </div>
-                    
-
-                    <!-- Ítem 2: Documentación Nivel Primario -->
-                    <div class="accordion-item bg-transparent border-bottom border-white">
-                        <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                            Documentación para Nivel Primario
-                        </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#matriculaAccordion">
-                        <div class="accordion-body text-white">
-                            Acceso a: CUS - ISA - Contrato de Servicio Educativo - Solicitud de vacante.  
-                            <br>
-                            <a href="./archivos_primario.html" class="btn btn-light mt-2" target="_blank">Ingresar</a>
-                        </div>
-                        </div>
-                    </div>
-
-                    <!-- Ítem 3: Documentación Nivel Secundario -->
-                    <div class="accordion-item bg-transparent border-bottom border-white">
-                        <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                            Documentación para Nivel Secundario
-                        </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#matriculaAccordion">
-                        <div class="accordion-body text-white">
-                            Acceso a: CUS - ISA - Contrato de Servicio Educativo. 
-                            <br>
-                            <a href="./archivos_secundario.html" class="btn btn-light mt-2" target="_blank">Ingresar</a>
-                        </div>
-                        </div>
-                    </div>
-
-                    <!-- Ítem 4: Documentación Nivel Superior -->
-                    <div class="accordion-item bg-transparent border-bottom border-white">
-                        <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-                            Documentación para Nivel Superior
-                        </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#matriculaAccordion">
-                        <div class="accordion-body text-white">
-                            Acceso a: Ficha de Inscripción - Ficha de Apto psicofísico - CUS - Contrato de Servicio Educativo - Formulario pre Inscripción.  
-                            <br>
-                            <a href="./archivos_superior.html" class="btn btn-light mt-2" target="_blank">Ingresar</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
 
-<section class="py-5 bg-light text-center">
-  <h2 class="mb-4 text-secondary fw-bold">Nuestras redes sociales</h2>
 
-  <div class="container">
-    <div class="row g-4 justify-content-center align-items-stretch">
-
-      <div class="col-12 col-sm-6 col-md-3 d-flex">
-        <div class="card_instagram w-100" data-aos="fade-up">
-          <div class="img">
-            <img src="/assets/img/logo-ig.jpg" class="p-3 card-img-top" alt="">
-          </div>
-          <div class="content">
-            <h2 style="color: #0e2267;">Nivel Inicial</h2>
-            <a href="https://www.instagram.com/brizuela_inicial?utm_source=ig_web_button_share_sheet&igsh=a2Z2bGNuZW1xdXVz" target="_blank">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3 d-flex">
-        <div class="card_instagram w-100" data-aos="fade-down">
-          <div class="img">
-            <img src="/assets/img/logo-ig.jpg" class="p-3 card-img-top" alt="">
-          </div>
-          <div class="content">
-            <h2 style="color: #004660;">Nivel Primario</h2>
-            <a href="https://www.instagram.com/institutobrizuela_primario?utm_source=ig_web_button_share_sheet&igsh=NjNiczI3eTYzYjN4" target="_blank">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3 d-flex">
-        <div class="card_instagram w-100" data-aos="fade-up">
-          <div class="img">
-            <img src="/assets/img/logo-ig.jpg" class="p-3 card-img-top" alt="">
-          </div>
-          <div class="content">
-            <h2 style="color: #7fad06;">Nivel Secundario</h2>
-            <a href="https://www.instagram.com/institutobrizuela/?utm_source=ig_web_button_share_sheet" target="_blank">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3 d-flex">
-        <div class="card_instagram w-100" data-aos="fade-down">
-          <div class="img">
-            <img src="/assets/img/logo-ig.jpg" class="p-3 card-img-top" alt="">
-          </div>
-          <div class="content">
-            <h2 style="color: #0e5708;">Nivel Superior</h2>
-            <a href="https://www.instagram.com/brizuela_superior?utm_source=ig_web_button_share_sheet&igsh=eHh5ZmtsZHhmODl5" target="_blank">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
+    <!-- Pre contenido principal -->
+    <div>
+      <h4 class="des">"Cuando se anunció la puesta en marcha de la Institución, el Padre Gómez Dávila decidió hacer
+        funcionar el Colegio en dependencias de la casa parroquial. Sólo contó con dos elementos: el elemento humano, y
+        una fe inmensa en Dios y la Virgen Dolorosa” (testimonio sobre la fundación del Brizuela).
+      </h4>
     </div>
-  </div>
-</section>
+    <!-- Contenido principal-->
+    <!-- Cards de cada nivel-->
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 align-items-center justify-content-center text-center">
+        <div class="col" data-aos="fade-up">
+          <div class="card h-100">
+            <img src="./assets/img/nivel-inicial/jardin01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NIVEL INICIAL</h5>
+              <p class="card-text">El nivel Inicial introduce al maravilloso mundo de la educación.</p>
+              <a href="./nivel_inicial.html" class="btn boton-inicial boton-nivel">Ingresar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-down">
+          <div class="card h-100">
+            <img src="./assets/img/nivel-primario/primario03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NIVEL PRIMARIO</h5>
+              <p class="card-text">El nivel Primario fortalece el camino de la educación, y el encuentro.</p>
+              <a href="./nivel_primario.html" class="btn boton-primario boton-nivel">Ingresar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up">
+          <div class="card h-100">
+            <img src="./assets/img/nivel-secundario/secundario03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NIVEL SECUNDARIO</h5>
+              <p class="card-text">El nivel Secundario acompaña a los estudiantes en su formación integral.</p>
+              <a href="./nivel_secundario.html" class="btn boton-secundario boton-nivel">Ingresar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-down">
+          <div class="card h-100">
+            <img src="./assets/img/Secundario.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NIVEL SUPERIOR</h5>
+              <p class="card-text">El nivel Superior prepara a los jóvenes en una formación profesional, y humana.</p>
+              <a href="./nivel_superior.html" class="btn boton-superior boton-nivel">Ingresar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sección para el carrusel de novedades:-->
+    <section class="news-coverflow" data-aos="flip-left">
+      <h2 class="nc-title">Novedades</h2>
+      <h5 class="nc-title">Compartimos la vida en comunidad.</h5>
 
-    </main>
+      <div class="nc-viewport">
+        <button class="nc-btn nc-btn--prev" data-prev aria-label="Anterior">&#10094;</button>
 
-    <!-- Estructura del footer -->
-    <footer>
-     
-        <!-- Botón circular con icono, tooltip y aria-label -->
-    <button
-      id="toggle-popup"
-      class="btn-popup"
-      aria-label="Abrir redes sociales"
-      title="Info de contacto"
-    >
+        <div class="nc-track">
+          <article class="nc-slide">
+            <div class="nc-media">
+              <img src="assets/img/nivel-inicial/jardin01.jpg" alt="Noticia 1" />
+            </div>
+
+            <p class="nc-desc">Empezamos con las inscripciones <br> para los más pequeños.</p>
+          </article>
+
+          <article class="nc-slide">
+            <div class="nc-media">
+              <img src="assets/img/nivel-primario/primario01.jpg" alt="Noticia 2" />
+            </div>
+
+            <p class="nc-desc">Acto de fin de ciclo, nivel Primario.</p>
+          </article>
+
+          <article class="nc-slide">
+            <div class="nc-media">
+              <img src="assets/img/nivel-secundario/Egresados secundario 2025.jpeg" alt="Noticia 3" />
+            </div>
+
+            <p class="nc-desc">Egresados Nivel Secundario, <br>promoción 2025.</p>
+          </article>
+
+          <article class="nc-slide">
+            <div class="nc-media">
+              <img src="assets/img/nivel-superior/Egresados TP 25.png" alt="Noticia 4" />
+            </div>
+
+            <p class="nc-desc">Egresados 2025, <br> Trayecto Pedagógico para Graduados no Docentes.</p>
+          </article>
+          <article class="nc-slide">
+            <div class="nc-media">
+              <img src="assets/img/Ntra Sra de los Dolores.jpeg" alt="Noticia 5" />
+            </div>
+
+            <p class="nc-desc">Nuestra Madre nos bendice.</p>
+          </article>
+        </div>
+
+        <button class="nc-btn nc-btn--next" data-next aria-label="Siguiente">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Sección para |novedades | archivos importantes, matriculación, mesas de exámenes|-->
+    <section class="py-5 text-white" style="background: linear-gradient(to right, #02293f, #046b9b, #02293f);"
+      data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-4">REQUISITOS PARA LA MATRICULACIÓN</h2>
+        <h4>Requerimientos para cada nivel:</h4>
+        <div class="accordion" id="matriculaAccordion">
+
+          <!-- Ítem 1: Documentación nivel inicial-->
+          <div class="accordion-item bg-transparent border-bottom border-white">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button text-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne">
+                Documentación para Nivel Inicial
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#matriculaAccordion">
+              <div class="accordion-body text-white">
+                Acceso a: CUS - ISA - Contrato de Servicio Educativo - Solicitud de vacante.
+                <br>
+                <a href="./archivos_inicial.html" class="btn btn-light mt-2" target="_blank">Ingresar</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Ítem 2: Documentación Nivel Primario -->
+          <div class="accordion-item bg-transparent border-bottom border-white">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo">
+                Documentación para Nivel Primario
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#matriculaAccordion">
+              <div class="accordion-body text-white">
+                Acceso a: CUS - ISA - Contrato de Servicio Educativo - Solicitud de vacante.
+                <br>
+                <a href="./archivos_primario.html" class="btn btn-light mt-2" target="_blank">Ingresar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ítem 3: Documentación Nivel Secundario -->
+          <div class="accordion-item bg-transparent border-bottom border-white">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree">
+                Documentación para Nivel Secundario
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#matriculaAccordion">
+              <div class="accordion-body text-white">
+                Acceso a: CUS - ISA - Contrato de Servicio Educativo.
+                <br>
+                <a href="./archivos_secundario.html" class="btn btn-light mt-2" target="_blank">Ingresar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ítem 4: Documentación Nivel Superior -->
+          <div class="accordion-item bg-transparent border-bottom border-white">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour">
+                Documentación para Nivel Superior
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#matriculaAccordion">
+              <div class="accordion-body text-white">
+                Acceso a: Ficha de Inscripción - Ficha de Apto psicofísico - CUS - Contrato de Servicio Educativo -
+                Formulario pre Inscripción.
+                <br>
+                <a href="./archivos_superior.html" class="btn btn-light mt-2" target="_blank">Ingresar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <section class="py-5 mt-5 bg-light text-center">
+      <h2 class="mb-4 text-secondary fw-bold">Nuestras redes sociales</h2>
+
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+           <div class="card_instagram w-100" data-aos="fade-opacity">
+              <div class="img">
+                <img src="/assets/img/logo-ig.jpg" class="p-3 card-img-top" alt="">
+              </div>
+              <div class="content">
+                <h2 style="color: #0e2267;">Nivel Inicial</h2>
+                <a href="https://www.instagram.com/brizuela_inicial?utm_source=ig_web_button_share_sheet&igsh=a2Z2bGNuZW1xdXVz"
+                  target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+            <div class="card_instagram w-100" data-aos="fade-opacity">
+                   <div class="img">
+                <img src="/assets/img/logo-ig.jpg" class="p-3 card-img-top" alt="">
+              </div>
+              <div class="content">
+                <h2 style="color: #004660;">Nivel Primario</h2>
+                <a href="https://www.instagram.com/institutobrizuela_primario?utm_source=ig_web_button_share_sheet&igsh=NjNiczI3eTYzYjN4"
+                  target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+            <div class="card_instagram w-100" data-aos="fade-opacity">
+              <div class="img">
+                <img src="/assets/img/logo-ig.jpg" class="p-3 card-img-top" alt="">
+              </div>
+              <div class="content">
+                <h2 style="color: #7fad06;">Nivel Secundario</h2>
+                <a href="https://www.instagram.com/institutobrizuela/?utm_source=ig_web_button_share_sheet"
+                  target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+            <div class="card_instagram w-100" data-aos="fade-opacity">
+              <div class="img">
+                <img src="/assets/img/logo-ig.jpg" class="p-3 card-img-top" alt="">
+              </div>
+              <div class="content">
+                <h2 style="color: #0e5708;">Nivel Superior</h2>
+                <a href="https://www.instagram.com/brizuela_superior?utm_source=ig_web_button_share_sheet&igsh=eHh5ZmtsZHhmODl5"
+                  target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+
+
+
+  </main>
+
+
+  <!-- Estructura del footer -->
+  <footer>
+
+    <!-- Botón circular con icono, tooltip y aria-label -->
+    <button id="toggle-popup" class="btn-popup" aria-label="Abrir redes sociales" title="Info de contacto">
       <i class="fa-regular fa-comments" style="color: #000000;"></i>
     </button>
-    
-    
+
+
     <p>Ciclo lectivo 2025 || © Instituto Brizuela </p>
 
-   
-<div id="popup" class="popup" aria-hidden="true">
-    <div class="popup-inner">
-        <button id="close-popup" class="close-btn" aria-label="Cerrar">&times;</button>
-        <div class="popup-content">
-        <p>Contactos <br> Teléfono nivel Incial y Primario: 3544 - 420214 <br>Mail Inicial: brizuelainicial@gmail.com <br>Mail Primario: nivelprimario@institutobrizuela.edu.ar<br>Teléfono nivel Secundario y Superior: 3544 - 420383 <br>Mail Secundario: secretariabrizuela@gmail.com<br>Mail Superior: ifd.institutobrizuela@institutobrizuela.edu.ar</p>
-        
-    </div>
-    </div>
-</div>
- </footer>
-    <!-- Archivos JavaScript -->
-    <script src="https://kit.fontawesome.com/84a6577e66.js" crossorigin="anonymous"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/img.js"></script>
-    <script src="assets/js/footer.js"> </script>
-    <script src="assets/js/novedades.js"> </script>
 
-    <!-- Script de Instagram (necesario para que funcione el embed) -->
+        <div id="popup" class="popup" aria-hidden="true">
+          <div class="popup-inner">
+           <button id="close-popup" class="close-btn" aria-label="Cerrar">&times;</button>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-qB9hXScN+ZBz9XbW9GHMHL2c5Zlq0EfjWk7Vm7K46D3xY7aSGV3wA92m7YY04h8g" crossorigin="anonymous"></script>
+            <div class="popup-content">
+              <p>Contactos <br> Teléfono nivel Incial y Primario: 3544 - 420214 <br>Mail Inicial: brizuelainicial@gmail.com
+            <br>Mail Primario: nivelprimario@institutobrizuela.edu.ar<br>Teléfono nivel Secundario y Superior: 3544 -
+            420383 <br>Mail Secundario: secretariabrizuela@gmail.com<br>Mail Superior:
+            ifd.institutobrizuela@institutobrizuela.edu.ar</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+            </div>
+          </div>
+        </div>
+  </footer>
+  <!-- Archivos JavaScript -->
+  <script src="https://kit.fontawesome.com/84a6577e66.js" crossorigin="anonymous"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/img.js"></script>
+  <script src="assets/js/footer.js"> </script>
+  <script src="assets/js/novedades.js"> </script>
 
-    <!--Script animaciones AOS-->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-     AOS.init({
-        duration: 1000, // duración de animación en ms
-        once: true, // se anima una sola vez
-        offset: 100 // distancia antes de activarse
+  <!-- Script de Instagram (necesario para que funcione el embed) -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qB9hXScN+ZBz9XbW9GHMHL2c5Zlq0EfjWk7Vm7K46D3xY7aSGV3wA92m7YY04h8g"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+  <!--Script animaciones AOS-->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+      disable: function () {
+        return window.innerWidth < 768;
+      }
     });
-</script>
+  </script>
 
-<!--Para que AOS no se inicialice en pantallas menores a 768px-->
-<script>
-  AOS.init({
-    disable: function () {
-      return window.innerWidth < 768;
-    }
-  });
-</script>
 
 
 </body>
+
 </html>

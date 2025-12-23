@@ -3,7 +3,8 @@ footer {
     color: white;
     padding: 10px;
     margin-bottom: 0;
-    border-top: #ef8c30 4px solid;}
+    border-top: #ef8c30 4px solid;
+    }
 footer p{
     display: inline-block;
     vertical-align: middle;
@@ -91,7 +92,7 @@ transform: scale(1.1);
 /* Ventana emergente */
 .popup-inner {
   background: var(--popup-bg);
-  width: 200%;
+  width: 100%;
   max-width: 800px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -133,6 +134,7 @@ transform: scale(1.1);
     width: 50px;
     height: 50px;
     font-size: 1.25rem;
+    margin-bottom: 0;
   }
 
   .popup-inner {
@@ -175,7 +177,9 @@ transform: scale(1.1);
 
 
 @media screen and (max-width: 768px){
-
+.footer {
+  margin-bottom: 0;
+}
 
 .icons {
     bottom: 8px;
