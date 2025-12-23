@@ -45,9 +45,26 @@ main{
     background-color: rgba(0, 0, 0, 0.2); /* Color semitransparente negro */
     z-index: 1; /* Coloca la superposición detrás del contenido */
 }
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  flex: 1;
+}
 .main > * {
     position: relative;
     z-index: 2; /* Asegura que el contenido esté encima de la superposición */
+}
+footer {
+  position: relative;
+  width: 100%;
 }
 
 /* Subrayado con acento Usar en cada título para darle a todos el mismo estilo*/
@@ -229,6 +246,26 @@ main{
 
 
 /*cards novedades Instagram*/
+
+.redes-anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: redesFade 0.8s ease forwards;
+}
+
+.redes-anim:nth-child(1) { animation-delay: 0.1s; }
+.redes-anim:nth-child(2) { animation-delay: 0.2s; }
+.redes-anim:nth-child(3) { animation-delay: 0.3s; }
+.redes-anim:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes redesFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .card_instagram{
   margin-top: 20px;
   width:100px;
