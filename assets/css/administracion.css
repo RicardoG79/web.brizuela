@@ -77,8 +77,16 @@
     color: #366099; 
     text-decoration: none;
     font-weight: bold;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .ayuda-contacto a:hover {
     text-decoration: underline; 
+}
+
+
+.ayuda-contacto a {
+    word-break: break-all; /* fuerza el corte del email en móviles */
 }
