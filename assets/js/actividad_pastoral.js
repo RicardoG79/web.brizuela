@@ -12,23 +12,23 @@ const actividadesPastorales = [
   },
   {
     id: 2,
-    titulo: "Campaña solidaria",
-    descripcion: "Los estudiantes organizaron una colecta de alimentos y ropa para familias necesitadas...",
-    imagen: "assets/img/nivel-secundario/secundario02.jpg",
+    titulo: "Peregrinación juvenil a Villa Cura Brochero",
+    descripcion: "Durante el mes de octubre, estudiantes del nivel secundario y superior participaron de la peregrinación juvenil a Villa Cura Brochero...",
+    imagen: "assets/img/actividad-pastoral/peregrinación.jpeg",
     detalle: `
-      Durante el mes de junio, los alumnos de primaria y secundaria llevaron adelante una campaña solidaria.  
-      Se recolectaron alimentos no perecederos, ropa de abrigo y útiles escolares para entregar a familias de la comunidad.  
-      La actividad se vivió con gran entusiasmo y compromiso, reforzando los valores de solidaridad y empatía.
+      Durante el mes de octubre, estudiantes del nivel secundario y superior participaron de la peregrinación juvenil a Villa Cura Brochero.  
+      Junto con jóvenes de toda la diócesis, realizaron una peregrinación espiritual, viviendo la devoción al Santo Cura Brochero, reflexionando sobre los valores evangélicos como camino de santidad.  
+      La actividad se vivió con gran entusiasmo y compromiso, reforzando los vínculos de fe y de comunidad.
     `
   },
   {
     id: 3,
-    titulo: "Retiro espiritual",
-    descripcion: "Un espacio de reflexión y encuentro personal con Dios para estudiantes de secundaria...",
+    titulo: "Actividades solidarias y de formación",
+    descripcion: "En un trabajo interdisciplinario, los estudiantes de nivel Secundario participaron de actividades solidarias...",
     imagen: "assets/img/nivel-secundario/secundario03.jpg",
     detalle: `
-      Los estudiantes de nivel secundario participaron de un retiro espiritual en las sierras de Córdoba.  
-      Fue una experiencia de encuentro con Dios y con sus compañeros, con momentos de reflexión, dinámicas grupales y oración.  
+      En un trabajo interdisciplinario, los estudiantes de nivel Secundario participaron de actividades solidarias.  
+      Fue una experiencia de encuentro fraterno con sus compañeros, con momentos de reflexión, de formación general, y de vinculación con la comunidad.  
       La actividad ayudó a fortalecer los lazos de amistad y la vivencia de la fe en comunidad.
     `
   },
