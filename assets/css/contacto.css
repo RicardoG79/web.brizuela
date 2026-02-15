@@ -2,10 +2,11 @@
 @import url("footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 /* --- Estilos para la sección de Contacto --- */
 .contacto-container {
     padding: 60px 20px;
-    background-color: #f8f9fa; /* Fondo gris claro */
+    background: linear-gradient(to right, #02293f, #046b9b, #02293f);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,130 +18,75 @@
     text-align: center;
 }
 
-
-
-/* Cards*/
-.contacto-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    justify-content: center;
-}
+/* --- CARDS CONTACTO --- */
 
 .contacto-card {
-    background-color: #fff; 
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    padding: 35px;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    height: 100%;
 }
 
 .contacto-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
 }
 
 .card-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: #444;
-    margin-bottom: 20px;
-    border-bottom: 2px solid  #EF8C30;
+    font-size: 1.9rem;
+    color: #333;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #EF8C30;
     padding-bottom: 10px;
 }
 
 .card-info,
 .card-info-mail {
-    word-break: normal;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
-}
-.card-info {
-    margin-top: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    word-break: break-all;
-}
-.card-info,
-.card-info-mail {
     display: flex;
     align-items: flex-start;
-}
-
-.card-info span,
-.card-info-mail span {
-    min-width: 0;
-}
-
-.card-info-mail {
-    margin-top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
+    gap: 12px;
+    font-size: 0.95rem;
     color: #555;
     line-height: 1.6;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    word-break: break-all;
+    margin-bottom: 14px;
+    overflow-wrap: anywhere;
 }
 
-.card-info i {
-    color: #366099;
-    margin-right: 15px;
-    font-size: 1.2rem;
-    flex-shrink: 0;
-}
-
+.card-info i,
 .card-info-mail i {
     color: #366099;
-    margin-right: 15px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    margin-top: 3px;
     flex-shrink: 0;
 }
 
-.card-info-horario {
+.card-info-mail a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.2s ease;
+}
+
+.card-info-mail a:hover {
     color: #366099;
-    margin-right: 15px;
-    font-size: 0.9rem;
-    flex-shrink: 0;
+    text-decoration: underline;
 }
 
-
-/* --- Media Queries para responsividad --- */
-@media (max-width: 768px) {
-    .page-title {
-        font-size: 2.5rem;
-    }
-
-    .page-description {
-        font-size: 1.2rem;
-    }
-
-    .contacto-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* Tablet */
-@media (max-width: 992px) {
-    .card-info,
-    .card-info-mail {
-        font-size: 0.8rem;
-    }
-}
-
-/* Mobile */
+/* Mobile ajuste */
 @media (max-width: 576px) {
+    .contacto-card {
+        padding: 25px;
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+
     .card-info,
     .card-info-mail {
-        font-size: 0.78rem;
+        font-size: 0.9rem;
     }
 }

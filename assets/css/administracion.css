@@ -1,6 +1,5 @@
 @import url("header.css");
 @import url("footer.css");
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 /* --- Estilos para la sección de Administración --- */
@@ -14,7 +13,6 @@
 
 /* Estilo para los títulos de la sección */
 .administracion-seccion h2 {
-    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 20px;
@@ -51,6 +49,10 @@
 }
 
 /* Estilo para la imagen */
+.container-administracion{
+    background: linear-gradient(to right, #02293f, #046b9b, #02293f);
+}
+
 .container-administracion img {
     max-width: 100%; 
     height: auto; 
