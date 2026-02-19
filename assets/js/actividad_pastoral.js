@@ -21,6 +21,7 @@ const actividadesPastorales = [
       La actividad se vivió con gran entusiasmo y compromiso, reforzando los vínculos de fe y de comunidad.
     `
   },
+  /*
   {
     id: 3,
     titulo: "Actividades solidarias y de formación",
@@ -47,6 +48,7 @@ const actividadesPastorales = [
       y pidiéndole que siga acompañando nuestro camino como colegio.
     `
   }
+    */
 ];
 
 // Seleccionamos contenedores
