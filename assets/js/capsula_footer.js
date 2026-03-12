@@ -13,7 +13,7 @@ let mifooter = `
     </button>
     
     
-    <p>Ciclo lectivo 2025 || © Instituto Brizuela </p>
+    <p>Ciclo lectivo 2026 || © Instituto Brizuela </p>
 
        </div>
        
