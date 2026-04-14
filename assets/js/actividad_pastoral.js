@@ -1,6 +1,20 @@
 const actividadesPastorales = [
-  {
+    {
     id: 1,
+    titulo: "Vivencia de Semana Santa en comunidad",
+    descripcion: "Como comunidad educativa, participamos activamente de la Semana Santa con propuestas abiertas a toda la ciudad...",
+    imagen: "assets/img/actividad-pastoral/semana-santa-brizuela.jpeg",
+    detalle: `
+      Durante la Semana Santa, nuestro colegio vivió profundamente este tiempo litúrgico a través de diversas actividades abiertas a la comunidad.  
+
+      Fuimos sede de la tradicional visita a las 7 iglesias, recibiendo a fieles de toda la ciudad en un clima de oración y recogimiento.  
+      Además, acompañamos el Vía Crucis viviente realizado en Plaza Sarmiento, compartiendo un momento significativo de reflexión sobre la Pasión de Cristo.  
+
+      Estas experiencias, junto a otras propuestas pastorales, fortalecieron los lazos de fe, encuentro y compromiso comunitario, invitándonos a vivir el mensaje de Jesús de manera concreta en nuestra vida cotidiana.
+    `
+  },
+  { 
+    id: 2,
     titulo: "Misa de fin de ciclo  para 6º grado",
     descripcion: "Celebramos juntos fin de un ciclo lectivo, con una celebración comunitaria...",
     imagen: "assets/img/actividad-pastoral/Misa-fin-ciclo.jpeg",
@@ -11,7 +25,7 @@ const actividadesPastorales = [
     `
   },
   {
-    id: 2,
+    id: 3,
     titulo: "Peregrinación juvenil a Villa Cura Brochero",
     descripcion: "Durante el mes de octubre, estudiantes del nivel secundario y superior participaron de la peregrinación juvenil a Villa Cura Brochero...",
     imagen: "assets/img/actividad-pastoral/peregrinación.jpeg",
@@ -20,7 +34,8 @@ const actividadesPastorales = [
       Junto con jóvenes de toda la diócesis, realizaron una peregrinación espiritual, viviendo la devoción al Santo Cura Brochero, reflexionando sobre los valores evangélicos como camino de santidad.  
       La actividad se vivió con gran entusiasmo y compromiso, reforzando los vínculos de fe y de comunidad.
     `
-  },
+  }
+  
   /*
   {
     id: 3,
